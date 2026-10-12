@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VentNext | US LLC Formation, EIN, Banking & Compliance (Bizee & Doola Style)</title>
-    <meta name="description" content="Form your US LLC with $0 service fee, fast 2-day IRS EIN, US bank account setup, FinCEN BOI, and registered agent across all 50 states. Built for global founders.">
+    <title>VentNext is for Do'ers: US LLC Formation, US Banking, Taxes, and Compliance</title>
+    <meta name="description" content="LLC Formation, EIN, US Banking, Annual State Filings, Federal Tax Filings and a Dedicated Account Manager. Grow your business and let VentNext handle compliance.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,9 +29,7 @@
                             600: '#2563eb',
                             700: '#1d4ed8',
                             800: '#1e40af',
-                            900: '#1e3a8a',
-                            navy: '#0b132b',
-                            gold: '#f59e0b',
+                            900: '#0f172a',
                             emerald: '#10b981',
                         }
                     }
@@ -40,455 +38,629 @@
         }
     </script>
     <style>
-        .corp-card {
+        .doola-card {
             background: #ffffff;
             border: 1px solid #e2e8f0;
-            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+            border-radius: 1.5rem;
+            transition: all 0.25s ease;
         }
-        .corp-card-hover:hover {
+        .doola-card:hover {
             border-color: #cbd5e1;
-            box-shadow: 0 14px 28px -6px rgba(15, 23, 42, 0.08), 0 6px 12px -4px rgba(15, 23, 42, 0.04);
+            box-shadow: 0 20px 30px -10px rgba(15, 23, 42, 0.08);
             transform: translateY(-2px);
         }
-        .step-active {
-            border-color: #2563eb;
-            color: #2563eb;
-            background: #eff6ff;
+        .tab-btn.active {
+            background-color: #0f172a;
+            color: #ffffff;
+            border-color: #0f172a;
         }
     </style>
 </head>
-<body class="bg-slate-50/70 text-slate-800 font-sans antialiased selection:bg-brand-600 selection:text-white min-h-screen">
+<body class="bg-white text-slate-900 font-sans antialiased selection:bg-brand-600 selection:text-white min-h-screen">
 
-    <!-- Top Announcement Bar (Doola / Bizee Style) -->
-    <div class="bg-slate-900 text-white text-xs font-medium py-2.5 px-4 text-center border-b border-slate-800 flex items-center justify-center gap-2">
+    <!-- Top Announcement Bar (doola.com Style) -->
+    <div class="bg-slate-900 text-white text-xs font-semibold py-2.5 px-4 text-center border-b border-slate-800 flex items-center justify-center gap-2">
         <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-bold border border-emerald-400/30 text-[11px]">
-            <i data-lucide="check-circle-2" class="w-3.5 h-3.5 mr-1 inline"></i> 2026 Founder Special
+            ⚡ 2026 Founder Release
         </span>
-        <span class="text-slate-300">USA LLC Formation Silver Package is <strong>$0 Service Fee</strong> in all 50 states!</span>
-        <a href="#packages" class="underline hover:text-white ml-1 font-bold inline-flex items-center gap-1">Select Package <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+        <span class="text-slate-200">How Global Businesses Stay Compliant • $0 Formation Service Fee Tier Available!</span>
+        <a href="#pricing" class="underline hover:text-white ml-1 font-bold inline-flex items-center gap-1">Get Started <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
     </div>
 
-    <!-- Corporate Header Navigation -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-sm">
+    <!-- doola-style Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <!-- Brand Logo -->
-            <a href="index.html" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-900 via-brand-700 to-brand-500 p-0.5 shadow-md shadow-brand-900/15 group-hover:scale-105 transition-transform duration-300">
-                    <div class="w-full h-full bg-brand-900 rounded-[10px] flex items-center justify-center">
-                        <span class="font-display font-black text-xl text-white">V</span>
-                    </div>
+            <a href="index.html" class="flex items-center gap-2.5 group">
+                <div class="w-9 h-9 rounded-xl bg-slate-900 flex items-center justify-center text-white font-display font-extrabold text-xl group-hover:scale-105 transition-transform">
+                    V
                 </div>
                 <div class="flex flex-col">
                     <span class="font-display font-bold text-2xl tracking-tight text-slate-900 flex items-center">
                         Vent<span class="text-brand-600">Next</span>
                     </span>
-                    <span class="text-[10px] uppercase tracking-widest text-slate-500 font-bold -mt-1">Business Formation</span>
+                    <span class="text-[9px] uppercase tracking-widest text-slate-400 font-bold -mt-1">Business-in-a-Box™</span>
                 </div>
             </a>
 
-            <!-- Navigation Links -->
-            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
-                <a href="index.html" class="text-brand-600 font-bold border-b-2 border-brand-600 pb-1">Overview</a>
-                <a href="#packages" class="hover:text-slate-900 transition-colors">Pricing Packages</a>
-                <a href="services.html" class="hover:text-slate-900 transition-colors">Services</a>
+            <!-- Navigation Links (doola Product Suite Menu) -->
+            <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-600">
+                <a href="#product-suite" class="hover:text-slate-900 transition-colors">Product Suite</a>
+                <a href="services.html" class="hover:text-slate-900 transition-colors">Formation</a>
                 <a href="states.html" class="hover:text-slate-900 transition-colors flex items-center gap-1.5">
                     <span>50 States</span>
-                    <span class="px-1.5 py-0.5 rounded-full bg-brand-50 text-brand-700 text-[10px] font-bold border border-brand-200">50</span>
+                    <span class="px-1.5 py-0.5 rounded-full bg-brand-50 text-brand-700 text-[10px] font-bold">50</span>
                 </a>
-                <a href="#how-it-works" class="hover:text-slate-900 transition-colors">How It Works</a>
-                <a href="about.html" class="hover:text-slate-900 transition-colors">About Us</a>
+                <a href="#pricing" class="hover:text-slate-900 transition-colors">Pricing</a>
+                <a href="#wall-of-love" class="hover:text-slate-900 transition-colors">Wall of Love</a>
+                <a href="about.html" class="hover:text-slate-900 transition-colors">About</a>
                 <a href="contact.html" class="hover:text-slate-900 transition-colors">Contact</a>
             </nav>
 
-            <!-- Actions (Bizee/Doola CTA) -->
+            <!-- Action Buttons (doola Style) -->
             <div class="hidden sm:flex items-center gap-3">
-                <a href="https://wa.me/" target="_blank" class="text-xs font-semibold text-slate-700 hover:text-emerald-700 flex items-center gap-1.5 px-3.5 py-2 rounded-xl border border-slate-200 hover:border-emerald-300 transition bg-slate-50/50">
-                    <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i> WhatsApp Desk
+                <a href="https://wa.me/" target="_blank" class="text-xs font-semibold text-slate-700 hover:text-emerald-700 flex items-center gap-1.5 px-3.5 py-2.5 rounded-full border border-slate-200 hover:border-emerald-300 transition bg-slate-50">
+                    <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i> WhatsApp
                 </a>
-                <button onclick="startWizard()" class="bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold px-5 py-2.5 rounded-xl shadow-md shadow-brand-600/20 transition flex items-center gap-1.5">
-                    Start My Business <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                <button onclick="openWizardModal()" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold px-6 py-2.5 rounded-full shadow-md transition flex items-center gap-1.5">
+                    Get Started for Free <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
                 </button>
             </div>
 
-            <!-- Mobile Menu Toggle -->
-            <button onclick="toggleMobileMenu()" class="md:hidden text-slate-600 hover:text-slate-900 p-2">
-                <i data-lucide="menu" id="menuIcon" class="w-6 h-6"></i>
+            <!-- Mobile Toggle -->
+            <button onclick="toggleMobileMenu()" class="md:hidden text-slate-700 p-2">
+                <i data-lucide="menu" class="w-6 h-6"></i>
             </button>
         </div>
 
-        <!-- Mobile Dropdown -->
-        <div id="mobileMenu" class="hidden md:hidden px-4 pt-2 pb-6 bg-white border-b border-slate-200">
-            <div class="flex flex-col gap-4 text-sm font-semibold text-slate-600">
-                <a href="index.html" class="py-2 border-b border-slate-100 text-brand-600 font-bold">Overview</a>
-                <a href="#packages" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100 hover:text-slate-900">Pricing Packages</a>
-                <a href="services.html" class="py-2 border-b border-slate-100 hover:text-slate-900">Services Breakdown</a>
-                <a href="states.html" class="py-2 border-b border-slate-100 hover:text-slate-900">50 US States Directory</a>
-                <a href="#how-it-works" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100 hover:text-slate-900">How It Works</a>
-                <a href="about.html" class="py-2 border-b border-slate-100 hover:text-slate-900">About VentNext</a>
-                <a href="contact.html" class="py-2 hover:text-slate-900">Contact Desk</a>
-                <button onclick="startWizard(); toggleMobileMenu()" class="w-full bg-brand-600 text-white font-bold py-3 rounded-xl mt-2 text-center shadow-md">
-                    Start My Business Now
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden px-4 pt-2 pb-6 bg-white border-b border-slate-200 text-sm font-semibold text-slate-700">
+            <div class="flex flex-col gap-3">
+                <a href="#product-suite" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100">Product Suite</a>
+                <a href="services.html" class="py-2 border-b border-slate-100">Formation & Tax</a>
+                <a href="states.html" class="py-2 border-b border-slate-100">50 US States Directory</a>
+                <a href="#pricing" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100">Pricing Packages</a>
+                <a href="#wall-of-love" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100">Wall of Love</a>
+                <a href="about.html" class="py-2 border-b border-slate-100">About VentNext</a>
+                <a href="contact.html" class="py-2">Contact</a>
+                <button onclick="openWizardModal(); toggleMobileMenu()" class="w-full bg-slate-900 text-white font-bold py-3 rounded-full mt-2 text-center">
+                    Get Started for Free
                 </button>
             </div>
         </div>
     </header>
 
-    <!-- HERO SECTION (DOOLA & BIZEE STYLE DUAL HERO) -->
-    <section class="relative pt-16 pb-24 overflow-hidden bg-white border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                
-                <!-- Hero Left: Value Proposition -->
-                <div class="lg:col-span-7 text-left">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-brand-700 text-xs font-bold mb-6">
-                        <span class="w-2 h-2 rounded-full bg-brand-600 animate-pulse"></span>
-                        <span>Business-in-a-Box for Non-Resident Founders</span>
-                    </div>
-
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight font-display mb-6 leading-[1.12] text-slate-900">
-                        Launch Your US LLC & Bank Account. <br>
-                        <span class="text-brand-600">From Anywhere in the World.</span>
-                    </h1>
-
-                    <p class="text-lg text-slate-600 mb-8 leading-relaxed max-w-2xl">
-                        Like Bizee and Doola, VentNext combines official 50-state legal entity formation, 2-day expedited IRS EIN tax IDs, US business bank accounts (Mercury & Relay), and FinCEN compliance — 100% remote without SSN or US visa.
-                    </p>
-
-                    <!-- Trust Checklist -->
-                    <div class="grid grid-cols-2 gap-3 text-xs text-slate-700 font-semibold mb-8">
-                        <div class="flex items-center gap-2">
-                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
-                            <span>$0 Formation Service Fee Tier</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
-                            <span>Official IRS CP-575 EIN in 48 Hours</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
-                            <span>1-Year Registered Agent Included</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
-                            <span>Stripe & US Banking Guaranteed</span>
-                        </div>
-                    </div>
-
-                    <!-- CTA Buttons -->
-                    <div class="flex flex-col sm:flex-row items-center gap-4">
-                        <button onclick="startWizard()" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-lg shadow-brand-600/25 transition flex items-center justify-center gap-2">
-                            <i data-lucide="rocket" class="w-4 h-4"></i> Start Company Formation ($0 Fee)
-                        </button>
-                        <a href="#packages" class="w-full sm:w-auto px-7 py-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-sm transition flex items-center justify-center gap-2">
-                            <i data-lucide="layout-grid" class="w-4 h-4 text-slate-500"></i> Compare Packages
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Hero Right: Interactive Quick-Estimator Card (Bizee / Doola Style Widget) -->
-                <div class="lg:col-span-5">
-                    <div class="corp-card rounded-3xl p-6 sm:p-8 border-2 border-slate-200/90 shadow-xl bg-slate-50/50">
-                        <div class="flex justify-between items-center mb-6">
-                            <div>
-                                <span class="text-[11px] font-bold uppercase tracking-wider text-brand-600 block">Formation Calculator</span>
-                                <h3 class="text-xl font-bold font-display text-slate-900">Instant Price Estimator</h3>
-                            </div>
-                            <span class="px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold border border-emerald-200">Live Fees</span>
-                        </div>
-
-                        <!-- Entity Type Selector -->
-                        <div class="mb-4">
-                            <label class="block text-xs font-bold text-slate-700 mb-1.5">1. Select Entity Type</label>
-                            <div class="grid grid-cols-2 gap-2">
-                                <button type="button" class="py-2.5 px-3 rounded-xl border border-brand-600 bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center gap-1.5 shadow-sm">
-                                    <i data-lucide="building-2" class="w-3.5 h-3.5"></i> Limited Liability Co. (LLC)
-                                </button>
-                                <button type="button" class="py-2.5 px-3 rounded-xl border border-slate-200 bg-white text-slate-600 font-semibold text-xs flex items-center justify-center gap-1.5 hover:bg-slate-50">
-                                    <i data-lucide="briefcase" class="w-3.5 h-3.5"></i> C-Corporation
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- State Selector -->
-                        <div class="mb-4">
-                            <label class="block text-xs font-bold text-slate-700 mb-1.5">2. State of Formation (All 50 States)</label>
-                            <select id="quickStateSelect" onchange="updateQuickEstimator()" class="w-full px-3.5 py-2.5 rounded-xl bg-white border border-slate-300 text-slate-900 text-xs font-semibold focus:outline-none focus:border-brand-600">
-                                <option value="Wyoming" data-fee="102">Wyoming — $102 State Fee (#1 for Non-Residents)</option>
-                                <option value="New Mexico" data-fee="50">New Mexico — $50 State Fee (Lowest Startup Fee)</option>
-                                <option value="Delaware" data-fee="90">Delaware — $90 State Fee (Best for VC Funding)</option>
-                                <option value="Florida" data-fee="125">Florida — $125 State Fee (Best for E-Commerce)</option>
-                                <option value="Texas" data-fee="300">Texas — $300 State Fee (No State Income Tax)</option>
-                                <option value="California" data-fee="70">California — $70 State Fee</option>
-                            </select>
-                        </div>
-
-                        <!-- Package Selector -->
-                        <div class="mb-6">
-                            <label class="block text-xs font-bold text-slate-700 mb-1.5">3. Select Package Tier</label>
-                            <select id="quickPackageSelect" onchange="updateQuickEstimator()" class="w-full px-3.5 py-2.5 rounded-xl bg-white border border-slate-300 text-slate-900 text-xs font-semibold focus:outline-none focus:border-brand-600">
-                                <option value="Silver" data-fee="0">Silver Package — $0 Service Fee (Free 1-Yr Agent)</option>
-                                <option value="Gold" data-fee="199" selected>Gold Package — $199 (Includes 2-Day Fast EIN & BOI)</option>
-                                <option value="Platinum" data-fee="299">Platinum Package — $299 (Turnkey VIP + ITIN Guidance)</option>
-                            </select>
-                        </div>
-
-                        <!-- Live Cost Breakdown Box -->
-                        <div class="bg-white p-4 rounded-2xl border border-slate-200 mb-6 space-y-2 text-xs">
-                            <div class="flex justify-between text-slate-600">
-                                <span>VentNext Package Fee:</span>
-                                <strong class="text-slate-900" id="quickPkgFee">$199</strong>
-                            </div>
-                            <div class="flex justify-between text-slate-600">
-                                <span>State Secretary Filing Fee:</span>
-                                <strong class="text-slate-900" id="quickStateFee">$102</strong>
-                            </div>
-                            <div class="flex justify-between text-slate-600">
-                                <span>1st Year Registered Agent:</span>
-                                <strong class="text-emerald-600 font-bold">FREE ($119 value)</strong>
-                            </div>
-                            <div class="border-t border-slate-100 pt-2 flex justify-between items-baseline">
-                                <span class="font-bold text-slate-800">Total Investment:</span>
-                                <span class="text-2xl font-black text-brand-600 font-display" id="quickTotal">$301</span>
-                            </div>
-                        </div>
-
-                        <button onclick="startWizardWithState()" class="w-full py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs uppercase tracking-wider transition shadow-md shadow-brand-600/20 flex items-center justify-center gap-2">
-                            Incorporate Now <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                        </button>
-                    </div>
-                </div>
-
+    <!-- HERO SECTION (DOOLA 1:1 HERO REPLICA) -->
+    <section class="relative pt-20 pb-24 overflow-hidden bg-white text-center">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Category Tag -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-xs font-bold text-slate-700 mb-8">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                <span>VentNext is for Do'ers & Global Builders</span>
             </div>
+
+            <!-- Main Punchy Headline (doola.com style) -->
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight font-display mb-6 text-slate-900 leading-[1.12]">
+                How Businesses <br class="hidden sm:block">
+                <span class="text-brand-600">Stay Compliant.</span>
+            </h1>
+
+            <!-- Subtitle (doola.com copy) -->
+            <p class="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto mb-10 leading-relaxed font-medium">
+                LLC Formation, Bookkeeping, US Banking, Business Taxes, and E-Commerce Analytics in one place.
+            </p>
+
+            <!-- Dual CTAs -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4">
+                <button onclick="openWizardModal()" class="w-full sm:w-auto px-8 py-4 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm shadow-xl transition flex items-center justify-center gap-2">
+                    Get Started for Free <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </button>
+                <a href="contact.html" class="w-full sm:w-auto px-8 py-4 rounded-full bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 font-bold text-sm transition flex items-center justify-center gap-2">
+                    Book a Free Consultation
+                </a>
+            </div>
+
+            <div class="text-xs text-slate-500 font-medium mb-16">
+                Explore the Process Before Paying • Flawless Formation or Your Money Back
+            </div>
+
+            <!-- Backed By The Best / Integration Strip (doola style) -->
+            <div class="border-t border-slate-100 pt-10">
+                <span class="text-[11px] font-bold uppercase tracking-widest text-slate-400 block mb-6">
+                    TRUSTED BY 15,000+ FOUNDERS ACROSS 70+ COUNTRIES • POWERED BY INDUSTRY LEADERS
+                </span>
+                <div class="flex flex-wrap items-center justify-center gap-8 sm:gap-14 text-slate-500 text-xs font-bold">
+                    <div class="flex items-center gap-2"><i data-lucide="shield" class="w-5 h-5 text-brand-600"></i> IRS Form 5472 / CP-575</div>
+                    <div class="flex items-center gap-2"><i data-lucide="credit-card" class="w-5 h-5 text-emerald-600"></i> Mercury & Relay Banking</div>
+                    <div class="flex items-center gap-2"><i data-lucide="shopping-bag" class="w-5 h-5 text-indigo-600"></i> Shopify & Stripe Ready</div>
+                    <div class="flex items-center gap-2"><i data-lucide="building" class="w-5 h-5 text-blue-600"></i> 50 US States SOS</div>
+                    <div class="flex items-center gap-2"><i data-lucide="lock" class="w-5 h-5 text-slate-800"></i> 256-Bit Bank Security</div>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- TRUST LOGO STRIP (DOOLA STYLE) -->
-    <div class="bg-slate-50 border-b border-slate-200 py-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <span class="text-xs uppercase tracking-widest text-slate-500 font-bold block mb-4">
-                TRUSTED BY 15,000+ FOUNDERS ACROSS 70+ COUNTRIES • STRIPE & MERCURY COMPLIANT
-            </span>
-            <div class="flex flex-wrap items-center justify-center gap-8 sm:gap-16 opacity-75 grayscale hover:grayscale-0 transition-all text-xs font-bold text-slate-600">
-                <div class="flex items-center gap-2"><i data-lucide="shield" class="w-5 h-5 text-brand-600"></i> IRS Authorized CP-575</div>
-                <div class="flex items-center gap-2"><i data-lucide="building" class="w-5 h-5 text-emerald-600"></i> 50 US Secretaries of State</div>
-                <div class="flex items-center gap-2"><i data-lucide="credit-card" class="w-5 h-5 text-blue-600"></i> Mercury & Relay Banking</div>
-                <div class="flex items-center gap-2"><i data-lucide="check-check" class="w-5 h-5 text-indigo-600"></i> FinCEN Compliant</div>
-                <div class="flex items-center gap-2"><i data-lucide="lock" class="w-5 h-5 text-slate-700"></i> 256-Bit Bank Encryption</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- SECTION: 3 BIZEE-STYLE PRICING TIERS (SILVER / GOLD / PLATINUM) -->
-    <section id="packages" class="py-24 bg-white border-b border-slate-200">
+    <!-- PRODUCT SUITE TABS (DOOLA SIGNATURE INTERACTIVE FEATURE) -->
+    <section id="product-suite" class="py-24 bg-slate-50 border-y border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2 block">TRANSPARENT PACKAGES</span>
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2 block">DOOLA'S PRODUCT SUITE</span>
                 <h2 class="text-3xl sm:text-5xl font-extrabold font-display text-slate-900 mb-4">
-                    Choose Your Formation Package
+                    Form, Manage, Track & Automate
                 </h2>
                 <p class="text-slate-600 text-base">
-                    Just like Bizee, our entry tier is <strong>$0 service fee</strong>. Upgrade to Gold or Platinum for fast-track 2-day EIN, FinCEN BOI, and banking concierge.
+                    All your back-office administrative, tax, and banking operations unified in one seamless platform.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+            <!-- Tab Buttons (doola Style Pills) -->
+            <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12" id="productTabs">
+                <button onclick="switchTab('formation')" id="tabBtn-formation" class="tab-btn active px-6 py-2.5 rounded-full border border-slate-300 text-xs font-bold transition">
+                    Formation
+                </button>
+                <button onclick="switchTab('bookkeeping')" id="tabBtn-bookkeeping" class="tab-btn px-6 py-2.5 rounded-full border border-slate-300 text-xs font-bold text-slate-700 bg-white hover:bg-slate-100 transition">
+                    Bookkeeping
+                </button>
+                <button onclick="switchTab('taxes')" id="tabBtn-taxes" class="tab-btn px-6 py-2.5 rounded-full border border-slate-300 text-xs font-bold text-slate-700 bg-white hover:bg-slate-100 transition">
+                    Taxes
+                </button>
+                <button onclick="switchTab('ai')" id="tabBtn-ai" class="tab-btn px-6 py-2.5 rounded-full border border-slate-300 text-xs font-bold text-slate-700 bg-white hover:bg-slate-100 transition">
+                    AI Co-Founder
+                </button>
+                <button onclick="switchTab('analytics')" id="tabBtn-analytics" class="tab-btn px-6 py-2.5 rounded-full border border-slate-300 text-xs font-bold text-slate-700 bg-white hover:bg-slate-100 transition">
+                    E-Commerce Analytics
+                </button>
+            </div>
+
+            <!-- Tab Content Cards -->
+            <div class="max-w-5xl mx-auto">
                 
-                <!-- TIER 1: SILVER ($0 SERVICE FEE) -->
-                <div class="corp-card rounded-3xl p-8 flex flex-col justify-between border-slate-200 hover:border-slate-300 transition">
-                    <div>
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <span class="text-xs font-bold uppercase tracking-wider text-slate-500 block">Entry Formation</span>
-                                <h3 class="text-2xl font-bold font-display text-slate-900">Silver Package</h3>
+                <!-- 1. Formation Tab -->
+                <div id="tabContent-formation" class="doola-card p-8 sm:p-12 shadow-sm">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <span class="text-xs font-bold text-brand-600 uppercase tracking-wider mb-2 block">US Entity Formation</span>
+                            <h3 class="text-3xl font-extrabold font-display text-slate-900 mb-4">Form Your Business in the U.S. From Anywhere.</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                                We handle the paperwork, state filings, and compliance so you can focus on your vision. 100% remote formation in Wyoming, Delaware, and all 50 states without SSN or US residency.
+                            </p>
+                            <ul class="space-y-3 text-xs text-slate-700 font-semibold mb-8">
+                                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Articles of Organization filed directly with state secretary</li>
+                                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Official 2-Day Fast EIN (CP-575 Federal Tax ID)</li>
+                                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> 1-Year Free Registered Agent & Statutory Address</li>
+                                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Direct Mercury & Relay Business Bank Account guidance</li>
+                            </ul>
+                            <button onclick="openWizardModal()" class="px-7 py-3 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider transition">
+                                Start Your Business &rarr;
+                            </button>
+                        </div>
+                        <div class="bg-slate-100 rounded-2xl p-6 border border-slate-200 text-center">
+                            <div class="w-16 h-16 rounded-2xl bg-white shadow-md flex items-center justify-center mx-auto mb-4 text-brand-600">
+                                <i data-lucide="building-2" class="w-8 h-8"></i>
                             </div>
-                            <span class="px-2.5 py-1 rounded-full bg-slate-100 text-slate-700 text-[11px] font-bold">Standard</span>
+                            <span class="text-2xl font-black text-slate-900 font-display block mb-1">50 US States</span>
+                            <span class="text-xs text-slate-500 font-medium block mb-4">Official SOS Filings • $0 Service Fee Tier</span>
+                            <div class="bg-white p-4 rounded-xl text-left text-xs space-y-2 border border-slate-200">
+                                <div class="flex justify-between"><span>Wyoming LLC:</span> <strong class="text-slate-900">$102 State Fee</strong></div>
+                                <div class="flex justify-between"><span>New Mexico LLC:</span> <strong class="text-slate-900">$50 State Fee</strong></div>
+                                <div class="flex justify-between"><span>Delaware LLC:</span> <strong class="text-slate-900">$90 State Fee</strong></div>
+                            </div>
                         </div>
-                        <p class="text-xs text-slate-500 mb-6">Ideal for founders who just need official legal entity registration.</p>
-                        
-                        <div class="mb-6">
-                            <span class="text-4xl font-black text-slate-900 font-display">$0</span>
-                            <span class="text-xs text-slate-500 font-semibold"> + State Filing Fee</span>
-                        </div>
-
-                        <ul class="space-y-3.5 text-xs text-slate-700 border-t border-slate-100 pt-6">
-                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i> <span><strong>Preparation & Filing of Articles of Organization</strong></span></li>
-                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i> <span>Unlimited State Name Availability Searches</span></li>
-                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i> <span><strong>FREE Registered Agent Service for 1 Full Year</strong> ($119 value)</span></li>
-                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i> <span>Custom Operating Agreement Template</span></li>
-                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i> <span>Lifetime Company Compliance Alerts</span></li>
-                            <li class="flex items-center gap-2.5 text-slate-400"><i data-lucide="x" class="w-4 h-4 text-slate-300 flex-shrink-0"></i> <span>No Expedited 2-Day EIN Included</span></li>
-                            <li class="flex items-center gap-2.5 text-slate-400"><i data-lucide="x" class="w-4 h-4 text-slate-300 flex-shrink-0"></i> <span>No FinCEN BOI Filing Included</span></li>
-                        </ul>
                     </div>
-
-                    <button onclick="launchPlanWizard('Silver', 0)" class="mt-8 w-full py-3.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-900 font-bold text-xs uppercase tracking-wider transition">
-                        Select Silver ($0 Service Fee)
-                    </button>
                 </div>
 
-                <!-- TIER 2: GOLD ($199 - MOST POPULAR) -->
-                <div class="corp-card rounded-3xl p-8 flex flex-col justify-between border-2 border-brand-600 relative bg-blue-50/20 shadow-xl">
-                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-600 text-white text-[10px] font-black px-3.5 py-1 rounded-full uppercase tracking-wider shadow">
-                        Most Popular • Recommended
-                    </div>
-                    <div>
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <span class="text-xs font-bold uppercase tracking-wider text-brand-600 block">Complete Setup</span>
-                                <h3 class="text-2xl font-bold font-display text-slate-900">Gold Package</h3>
+                <!-- 2. Bookkeeping Tab -->
+                <div id="tabContent-bookkeeping" class="doola-card p-8 sm:p-12 shadow-sm hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider mb-2 block">Finances & Invoicing</span>
+                            <h3 class="text-3xl font-extrabold font-display text-slate-900 mb-4">Easy Bookkeeping for Your Finances.</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                                Say goodbye to late nights with spreadsheets. Dedicated bookkeeping support, monthly reconciliations, and professional invoicing in seconds so you always know where your money stands.
+                            </p>
+                            <ul class="space-y-3 text-xs text-slate-700 font-semibold mb-8">
+                                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Track, categorize, and monitor all transactions in real time</li>
+                                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Send professional invoices in seconds to global clients</li>
+                                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Monthly balance sheet and profit & loss statements</li>
+                            </ul>
+                            <a href="services.html" class="inline-block px-7 py-3 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider transition">
+                                Track Your Finances &rarr;
+                            </a>
+                        </div>
+                        <div class="bg-emerald-50/50 rounded-2xl p-6 border border-emerald-200 text-center">
+                            <div class="w-16 h-16 rounded-2xl bg-white shadow-md flex items-center justify-center mx-auto mb-4 text-emerald-600">
+                                <i data-lucide="calculator" class="w-8 h-8"></i>
                             </div>
-                            <span class="px-2.5 py-1 rounded-full bg-brand-100 text-brand-700 text-[11px] font-bold">Bank-Ready</span>
+                            <span class="text-2xl font-black text-slate-900 font-display block mb-1">Dedicated Bookkeeper</span>
+                            <span class="text-xs text-slate-500 font-medium block">Monthly Financial Statements Synced with Taxes</span>
                         </div>
-                        <p class="text-xs text-slate-500 mb-6">Everything needed to open a US bank account, Stripe, and accept payments.</p>
-                        
-                        <div class="mb-6">
-                            <span class="text-4xl font-black text-slate-900 font-display">$199</span>
-                            <span class="text-xs text-slate-500 font-semibold"> + State Filing Fee</span>
-                        </div>
-
-                        <ul class="space-y-3.5 text-xs text-slate-700 border-t border-slate-200 pt-6">
-                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0"></i> <span><strong>Everything in Silver Package</strong></span></li>
-                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0"></i> <span><strong>IRS 2-Day Fast EIN Service (Official CP-575 Letter)</strong></span></li>
-                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0"></i> <span><strong>FinCEN BOI Mandatory Compliance Report Submission</strong></span></li>
-                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0"></i> <span>Banking Resolution Document for US Bank Account</span></li>
-                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0"></i> <span>Mercury & Relay Business Bank Account Priority Support</span></li>
-                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0"></i> <span>US Stripe Account Onboarding Walkthrough</span></li>
-                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0"></i> <span>Dedicated WhatsApp Concierge Desk Support</span></li>
-                        </ul>
                     </div>
-
-                    <button onclick="launchPlanWizard('Gold', 199)" class="mt-8 w-full py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs uppercase tracking-wider transition shadow-md shadow-brand-600/20">
-                        Select Gold ($199)
-                    </button>
                 </div>
 
-                <!-- TIER 3: PLATINUM ($299 - VIP TURNKEY) -->
-                <div class="corp-card rounded-3xl p-8 flex flex-col justify-between border-slate-200 hover:border-slate-300 transition">
-                    <div>
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <span class="text-xs font-bold uppercase tracking-wider text-slate-500 block">Turnkey VIP</span>
-                                <h3 class="text-2xl font-bold font-display text-slate-900">Platinum Package</h3>
+                <!-- 3. Taxes Tab -->
+                <div id="tabContent-taxes" class="doola-card p-8 sm:p-12 shadow-sm hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <span class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-2 block">IRS & State Taxes</span>
+                            <h3 class="text-3xl font-extrabold font-display text-slate-900 mb-4">Worry-Free Tax Filings via Dashboard.</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                                Foreign-owned US LLCs face mandatory IRS Form 5472 & 1120 filing rules with $25,000 penalties for non-compliance. Our licensed CPAs handle your federal and state tax filings accurately and on time.
+                            </p>
+                            <ul class="space-y-3 text-xs text-slate-700 font-semibold mb-8">
+                                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> IRS Form 5472 & 1120 pro-forma foreign entity tax returns</li>
+                                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> 1:1 consultation with a licensed US CPA tax expert</li>
+                                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Annual state report filings & franchise tax management</li>
+                            </ul>
+                            <a href="services.html" class="inline-block px-7 py-3 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider transition">
+                                File Your Taxes &rarr;
+                            </a>
+                        </div>
+                        <div class="bg-amber-50/50 rounded-2xl p-6 border border-amber-200 text-center">
+                            <div class="w-16 h-16 rounded-2xl bg-white shadow-md flex items-center justify-center mx-auto mb-4 text-amber-600">
+                                <i data-lucide="shield-check" class="w-8 h-8"></i>
                             </div>
-                            <span class="px-2.5 py-1 rounded-full bg-indigo-50 text-indigo-700 text-[11px] font-bold">All-Inclusive</span>
+                            <span class="text-2xl font-black text-slate-900 font-display block mb-1">Zero Penalties</span>
+                            <span class="text-xs text-slate-500 font-medium block">Licensed CPA Support • 100% Compliance Guaranteed</span>
                         </div>
-                        <p class="text-xs text-slate-500 mb-6">Full concierge service with expedited filing and certified ITIN W-7 support.</p>
-                        
-                        <div class="mb-6">
-                            <span class="text-4xl font-black text-slate-900 font-display">$299</span>
-                            <span class="text-xs text-slate-500 font-semibold"> + State Filing Fee</span>
-                        </div>
-
-                        <ul class="space-y-3.5 text-xs text-slate-700 border-t border-slate-100 pt-6">
-                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0"></i> <span><strong>Everything in Gold Package</strong></span></li>
-                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0"></i> <span><strong>Expedited State Secretary Filing Processing</strong></span></li>
-                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0"></i> <span><strong>ITIN (Form W-7) Application Assistance with IRS CAA</strong></span></li>
-                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0"></i> <span>Business Contract Templates Library</span></li>
-                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0"></i> <span>VIP Direct Legal Officer Phone & WhatsApp Access</span></li>
-                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0"></i> <span>Annual State Franchise Renewal Auto-Filing Concierge</span></li>
-                        </ul>
                     </div>
+                </div>
 
-                    <button onclick="launchPlanWizard('Platinum', 299)" class="mt-8 w-full py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider transition">
-                        Select Platinum ($299)
-                    </button>
+                <!-- 4. AI Co-Founder Tab -->
+                <div id="tabContent-ai" class="doola-card p-8 sm:p-12 shadow-sm hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider mb-2 block">AI Business Assistant</span>
+                            <h3 class="text-3xl font-extrabold font-display text-slate-900 mb-4">Your Smartest 24/7 AI Business Partner.</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                                Instant answers to every question about US state laws, IRS tax classifications, EIN statuses, and payment processing requirements without waiting for business hours.
+                            </p>
+                            <ul class="space-y-3 text-xs text-slate-700 font-semibold mb-8">
+                                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> 24/7 answers to compliance and formation rules</li>
+                                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Contract drafting & business document generation</li>
+                                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Automated state filing deadline notifications</li>
+                            </ul>
+                            <a href="about.html" class="inline-block px-7 py-3 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider transition">
+                                Explore AI Toolkit &rarr;
+                            </a>
+                        </div>
+                        <div class="bg-indigo-50/50 rounded-2xl p-6 border border-indigo-200 text-center">
+                            <div class="w-16 h-16 rounded-2xl bg-white shadow-md flex items-center justify-center mx-auto mb-4 text-indigo-600">
+                                <i data-lucide="sparkles" class="w-8 h-8"></i>
+                            </div>
+                            <span class="text-2xl font-black text-slate-900 font-display block mb-1">AI Co-Founder</span>
+                            <span class="text-xs text-slate-500 font-medium block">Trained on US Corporate Legal & Tax Statutes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Analytics Tab -->
+                <div id="tabContent-analytics" class="doola-card p-8 sm:p-12 shadow-sm hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <span class="text-xs font-bold text-sky-600 uppercase tracking-wider mb-2 block">E-Commerce Insights</span>
+                            <h3 class="text-3xl font-extrabold font-display text-slate-900 mb-4">Powerful E-Commerce Analytics Made Simple.</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                                Get detailed insights into every transaction, Shopify campaign, and customer interaction to fuel smarter growth decisions.
+                            </p>
+                            <ul class="space-y-3 text-xs text-slate-700 font-semibold mb-8">
+                                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Shopify and Amazon store sales performance tracking</li>
+                                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Track ad spend return on investment (ROAS)</li>
+                                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Customer lifetime value and cohort retention metrics</li>
+                            </ul>
+                            <a href="services.html" class="inline-block px-7 py-3 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider transition">
+                                Analyze Your Sales &rarr;
+                            </a>
+                        </div>
+                        <div class="bg-sky-50/50 rounded-2xl p-6 border border-sky-200 text-center">
+                            <div class="w-16 h-16 rounded-2xl bg-white shadow-md flex items-center justify-center mx-auto mb-4 text-sky-600">
+                                <i data-lucide="trending-up" class="w-8 h-8"></i>
+                            </div>
+                            <span class="text-2xl font-black text-slate-900 font-display block mb-1">E-Commerce Suite</span>
+                            <span class="text-xs text-slate-500 font-medium block">Integrates with Shopify, Stripe & Amazon</span>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- SECTION: HOW IT WORKS (DOOLA 4-STEP TIMELINE) -->
-    <section id="how-it-works" class="py-20 bg-slate-50/70 border-b border-slate-200">
+    <!-- SECTION: THE DOOLA DIFFERENCE (4 PROBLEM/SOLUTION CARDS) -->
+    <section class="py-24 bg-white border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2 block">SIMPLE PROCESS</span>
-                <h2 class="text-3xl font-extrabold font-display text-slate-900 mb-3">How VentNext Works</h2>
-                <p class="text-slate-600 text-sm">Four simple steps from application to your official US business bank account.</p>
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2 block">THE VENTNEXT DIFFERENCE</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold font-display text-slate-900 mb-4">
+                    Faster, Cheaper, Easier is Possible With One Platform.
+                </h2>
+                <p class="text-slate-600 text-base">
+                    When formation docs are in one place, taxes in another, and bookkeeping is hired out, time and savings slip through the cracks. We do it better under one roof.
+                </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div class="corp-card p-6 rounded-2xl relative">
-                    <span class="w-8 h-8 rounded-full bg-brand-600 text-white font-bold text-sm flex items-center justify-center mb-4">1</span>
-                    <h4 class="text-base font-bold text-slate-900 mb-2">Submit Online (5 Mins)</h4>
-                    <p class="text-xs text-slate-500 leading-relaxed">Choose your state (e.g. Wyoming, Delaware), company name, and enter founder passport details without SSN.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <div class="doola-card p-8">
+                    <div class="w-10 h-10 rounded-xl bg-blue-50 text-brand-600 flex items-center justify-center mb-4 font-bold">
+                        <i data-lucide="compass" class="w-5 h-5"></i>
+                    </div>
+                    <h4 class="text-xl font-bold font-display text-slate-900 mb-2">Not Sure What Comes Next?</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        We’ve got you covered. We’re purpose-built for first-time and international business owners, guiding you step-by-step through banking, EINs, and tax filings.
+                    </p>
                 </div>
 
-                <div class="corp-card p-6 rounded-2xl relative">
-                    <span class="w-8 h-8 rounded-full bg-brand-600 text-white font-bold text-sm flex items-center justify-center mb-4">2</span>
-                    <h4 class="text-base font-bold text-slate-900 mb-2">We File with the State</h4>
-                    <p class="text-xs text-slate-500 leading-relaxed">Our legal team prepares your Articles of Organization and files directly with the Secretary of State.</p>
+                <div class="doola-card p-8">
+                    <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4 font-bold">
+                        <i data-lucide="search-check" class="w-5 h-5"></i>
+                    </div>
+                    <h4 class="text-xl font-bold font-display text-slate-900 mb-2">Stop Searching for Help.</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        A separate legal team for formation, a bookkeeper in another time zone, and hours on confusing .gov websites. We clear the confusion with a single dashboard.
+                    </p>
                 </div>
 
-                <div class="corp-card p-6 rounded-2xl relative">
-                    <span class="w-8 h-8 rounded-full bg-brand-600 text-white font-bold text-sm flex items-center justify-center mb-4">3</span>
-                    <h4 class="text-base font-bold text-slate-900 mb-2">Get 2-Day IRS Fast EIN</h4>
-                    <p class="text-xs text-slate-500 leading-relaxed">We fast-track your official CP-575 Federal Tax ID directly from the IRS in 48-72 business hours.</p>
+                <div class="doola-card p-8">
+                    <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center mb-4 font-bold">
+                        <i data-lucide="coins" class="w-5 h-5"></i>
+                    </div>
+                    <h4 class="text-xl font-bold font-display text-slate-900 mb-2">Save Money With One Platform.</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Paying for legal formation, taxes, and accounting separately costs thousands. With our $0 formation tier and integrated packages, you save up to 70%.
+                    </p>
                 </div>
 
-                <div class="corp-card p-6 rounded-2xl relative">
-                    <span class="w-8 h-8 rounded-full bg-emerald-600 text-white font-bold text-sm flex items-center justify-center mb-4">4</span>
-                    <h4 class="text-base font-bold text-slate-900 mb-2">Open US Bank & Stripe</h4>
-                    <p class="text-xs text-slate-500 leading-relaxed">We guide you through opening your Mercury or Relay business bank account and connecting US Stripe.</p>
+                <div class="doola-card p-8">
+                    <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center mb-4 font-bold">
+                        <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+                    </div>
+                    <h4 class="text-xl font-bold font-display text-slate-900 mb-2">Love Shopify & Stripe? Us too.</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Our invoicing and corporate tax tools integrate with Stripe and Shopify to help e-commerce builders buy fewer tools and operate smoothly.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: PRICING (DOOLA 3-TIER + ANNUAL/MONTHLY SWITCH) -->
+    <section id="pricing" class="py-24 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2 block">PLANS & PRICING</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold font-display text-slate-900 mb-4">
+                    Get Started for Free & Enjoy a Formation Money-Back Guarantee.
+                </h2>
+                <p class="text-slate-600 text-base mb-8">
+                    Everything you need to start & grow your business compliantly in the United States.
+                </p>
+
+                <!-- Annual / Monthly Toggle (doola style) -->
+                <div class="inline-flex items-center p-1.5 rounded-full bg-slate-200/80 border border-slate-300">
+                    <button onclick="setBilling('annual')" id="billBtn-annual" class="px-5 py-2 rounded-full text-xs font-bold bg-white text-slate-900 shadow-sm transition">
+                        Annual (Best Value)
+                    </button>
+                    <button onclick="setBilling('monthly')" id="billBtn-monthly" class="px-5 py-2 rounded-full text-xs font-bold text-slate-600 hover:text-slate-900 transition">
+                        Monthly
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto">
+                
+                <!-- Plan 1: Starter (Formation & Bank Account) -->
+                <div class="doola-card p-8 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-slate-500 block mb-1">Formation & Bank Account</span>
+                        <h3 class="text-2xl font-bold font-display text-slate-900 mb-2">Starter</h3>
+                        <p class="text-xs text-slate-500 mb-6">Form your company, get your EIN, and get a US bank account.</p>
+                        
+                        <div class="mb-6">
+                            <span class="text-4xl font-black text-slate-900 font-display" id="priceStarter">$297</span>
+                            <span class="text-xs text-slate-500 font-semibold"> / yr + State Fees</span>
+                            <div class="text-[11px] text-emerald-600 font-bold mt-1">💡 $0 Service Fee self-serve tier available!</div>
+                        </div>
+
+                        <div class="text-xs font-bold text-slate-800 uppercase tracking-wider mb-4 border-t border-slate-100 pt-6">What's Included:</div>
+                        <ul class="space-y-3.5 text-xs text-slate-700">
+                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i> <span>LLC filed in 1–2 business days</span></li>
+                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i> <span>Official EIN (Your US Tax ID Number)</span></li>
+                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i> <span>Guidance to open US Bank Account (Mercury/Relay)</span></li>
+                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i> <span>US Commercial Business Address</span></li>
+                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i> <span>1-Year Registered Agent Service</span></li>
+                        </ul>
+                    </div>
+
+                    <button onclick="openWizardModal()" class="mt-8 w-full py-3.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-900 font-bold text-xs uppercase tracking-wider transition">
+                        Select Starter Plan
+                    </button>
+                </div>
+
+                <!-- Plan 2: Tax and Compliance (Most Popular - doola style) -->
+                <div class="doola-card p-8 flex flex-col justify-between border-2 border-brand-600 relative bg-blue-50/20 shadow-xl">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-600 text-white text-[10px] font-black px-4 py-1 rounded-full uppercase tracking-wider shadow">
+                        Most Popular
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-brand-600 block mb-1">Peace of Mind</span>
+                        <h3 class="text-2xl font-bold font-display text-slate-900 mb-2">Tax and Compliance</h3>
+                        <p class="text-xs text-slate-500 mb-6">Everything to form your company and stay compliant—so you never risk a penalty.</p>
+                        
+                        <div class="mb-6">
+                            <span class="text-4xl font-black text-slate-900 font-display" id="priceTax">$1,999</span>
+                            <span class="text-xs text-slate-500 font-semibold"> / yr + State Fees</span>
+                        </div>
+
+                        <div class="text-xs font-bold text-slate-800 uppercase tracking-wider mb-4 border-t border-slate-200 pt-6">What's Included:</div>
+                        <ul class="space-y-3.5 text-xs text-slate-700">
+                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0"></i> <span><strong>Everything in Starter Plan</strong></span></li>
+                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0"></i> <span>EIN up to 2 weeks faster (Expedited)</span></li>
+                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0"></i> <span><strong>Federal (IRS Form 5472/1120) + State Tax Filing</strong></span></li>
+                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0"></i> <span><strong>1:1 Consultation with Licensed CPA</strong></span></li>
+                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0"></i> <span>Bookkeeping + Invoicing Software</span></li>
+                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0"></i> <span>FinCEN BOI Mandatory Compliance Submission</span></li>
+                        </ul>
+                    </div>
+
+                    <button onclick="openWizardModal()" class="mt-8 w-full py-3.5 rounded-full bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs uppercase tracking-wider transition shadow-lg shadow-brand-600/25">
+                        Select Tax & Compliance
+                    </button>
+                </div>
+
+                <!-- Plan 3: Business-in-a-Box™ -->
+                <div class="doola-card p-8 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-slate-500 block mb-1">Experts on Deck</span>
+                        <h3 class="text-2xl font-bold font-display text-slate-900 mb-2">Business-in-a-Box™</h3>
+                        <p class="text-xs text-slate-500 mb-6">Your entire back office handled—so you can focus on growing, not managing.</p>
+                        
+                        <div class="mb-6">
+                            <span class="text-4xl font-black text-slate-900 font-display" id="priceBox">$2,999</span>
+                            <span class="text-xs text-slate-500 font-semibold" id="priceBoxLabel"> / yr + State Fees</span>
+                        </div>
+
+                        <div class="text-xs font-bold text-slate-800 uppercase tracking-wider mb-4 border-t border-slate-100 pt-6">What's Included:</div>
+                        <ul class="space-y-3.5 text-xs text-slate-700">
+                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0"></i> <span><strong>Everything in Tax & Compliance</strong></span></li>
+                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0"></i> <span><strong>Dedicated Human Bookkeeper</strong></span></li>
+                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0"></i> <span>Monthly Financial Statements & Reconciliations</span></li>
+                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0"></i> <span>Bookkeeping and Taxes, 100% Synced</span></li>
+                            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0"></i> <span>Estimated Quarterly Tax Projections</span></li>
+                        </ul>
+                    </div>
+
+                    <button onclick="openWizardModal()" class="mt-8 w-full py-3.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider transition">
+                        Select Business-in-a-Box
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: WALL OF LOVE (DOOLA TESTIMONIALS SLIDER / GRID) -->
+    <section id="wall-of-love" class="py-24 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2 block">WALL OF LOVE</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold font-display text-slate-900 mb-4">
+                    Loved by Global Founders Worldwide
+                </h2>
+                <p class="text-slate-600 text-base">
+                    From Dhaka to London, Dubai to Singapore—here’s what entrepreneurs say about setting up with VentNext.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="doola-card p-6">
+                    <div class="flex text-amber-400 mb-3 text-sm">★★★★★</div>
+                    <p class="text-xs text-slate-700 leading-relaxed mb-4 font-medium">
+                        "Got my Wyoming LLC and official IRS EIN within 48 hours without needing a US visa or SSN. Opened my Mercury account and connected Stripe in days."
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-slate-100 pt-3">
+                        <div class="w-8 h-8 rounded-full bg-blue-100 text-brand-700 font-bold flex items-center justify-center text-xs">RI</div>
+                        <div>
+                            <div class="text-xs font-bold text-slate-900">Ridwan I.</div>
+                            <div class="text-[10px] text-slate-500">Agency Founder, Bangladesh</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="doola-card p-6">
+                    <div class="flex text-amber-400 mb-3 text-sm">★★★★★</div>
+                    <p class="text-xs text-slate-700 leading-relaxed mb-4 font-medium">
+                        "Compared doola and Bizee, but VentNext's WhatsApp concierge gave me answers in minutes. They handled my FinCEN BOI filing without any headaches."
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-slate-100 pt-3">
+                        <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-700 font-bold flex items-center justify-center text-xs">AK</div>
+                        <div>
+                            <div class="text-xs font-bold text-slate-900">Alex K.</div>
+                            <div class="text-[10px] text-slate-500">SaaS Founder, United Kingdom</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="doola-card p-6">
+                    <div class="flex text-amber-400 mb-3 text-sm">★★★★★</div>
+                    <p class="text-xs text-slate-700 leading-relaxed mb-4 font-medium">
+                        "Our Shopify e-commerce brand needed a US company to process payments globally. VentNext handled Delaware registration and Relay banking seamlessly."
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-slate-100 pt-3">
+                        <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-700 font-bold flex items-center justify-center text-xs">SM</div>
+                        <div>
+                            <div class="text-xs font-bold text-slate-900">Sameer M.</div>
+                            <div class="text-[10px] text-slate-500">E-Commerce Merchant, UAE</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: FREQUENTLY ASKED QUESTIONS (DOOLA STYLE ACCORDION) -->
+    <section class="py-20 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2 block">FAQS</span>
+                <h2 class="text-3xl font-extrabold font-display text-slate-900 mb-3">Frequently Asked Questions</h2>
+                <p class="text-slate-600 text-sm">Everything you need to know about US company formation for non-residents.</p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="doola-card p-6">
+                    <h4 class="text-base font-bold text-slate-900 mb-2 flex justify-between items-center">
+                        Do I need to be a US citizen to work with VentNext?
+                        <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i>
+                    </h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        No! Over 90% of our founders are non-US residents from over 70 countries. You do not need a US Social Security Number (SSN), ITIN, or US visa to legally own a 100% foreign-owned US LLC.
+                    </p>
+                </div>
+
+                <div class="doola-card p-6">
+                    <h4 class="text-base font-bold text-slate-900 mb-2 flex justify-between items-center">
+                        What information do you need from me to get started?
+                        <i data-lucide="file-text" class="w-4 h-4 text-brand-600"></i>
+                    </h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        We don’t need any physical paperwork upfront. Just your desired company name, personal residential address, and contact details. Later, to open your Mercury/Relay business bank account, you’ll just need a clear international passport copy.
+                    </p>
+                </div>
+
+                <div class="doola-card p-6">
+                    <h4 class="text-base font-bold text-slate-900 mb-2 flex justify-between items-center">
+                        How does the 2-Day Fast EIN Service work without SSN?
+                        <i data-lucide="zap" class="w-4 h-4 text-amber-600"></i>
+                    </h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Normally, the IRS fax queue takes 45 business days. Through VentNext's expedited federal tax team, we coordinate directly with the IRS to deliver your official CP-575 confirmation letter in as little as 48 to 72 hours.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION: BIZEE & DOOLA VS VENTNEXT COMPARISON -->
-    <section class="py-20 bg-white border-b border-slate-200">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <span class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2 block">TRANSPARENT VALUE</span>
-                <h2 class="text-3xl font-extrabold font-display text-slate-900 mb-4">Why Founders Prefer VentNext</h2>
-                <p class="text-slate-600 text-sm max-w-2xl mx-auto">
-                    We combine Bizee’s $0 service fee formation with Doola’s dedicated global founder compliance infrastructure.
-                </p>
-            </div>
-
-            <div class="overflow-x-auto corp-card rounded-2xl border border-slate-200 shadow-sm">
-                <table class="w-full text-left text-xs border-collapse">
-                    <thead class="bg-slate-100 text-slate-700 uppercase tracking-wider font-bold border-b border-slate-200">
-                        <tr>
-                            <th class="py-4 px-6">Feature / Capability</th>
-                            <th class="py-4 px-6 text-brand-600 font-extrabold bg-blue-50/50">VentNext</th>
-                            <th class="py-4 px-6">Bizee (Incfile)</th>
-                            <th class="py-4 px-6">Doola</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-slate-100 text-slate-700 bg-white">
-                        <tr>
-                            <td class="py-4 px-6 font-bold text-slate-900">LLC Formation Service Fee</td>
-                            <td class="py-4 px-6 font-bold text-emerald-600 bg-blue-50/50">$0 Silver Tier</td>
-                            <td class="py-4 px-6 font-bold text-emerald-600">$0 Silver Tier</td>
-                            <td class="py-4 px-6 text-slate-500">$197 - $297/yr minimum</td>
-                        </tr>
-                        <tr>
-                            <td class="py-4 px-6 font-bold text-slate-900">IRS Fast EIN Delivery</td>
-                            <td class="py-4 px-6 font-bold text-brand-600 bg-blue-50/50">48 to 72 Hours</td>
-                            <td class="py-4 px-6">3 to 6 Weeks</td>
-                            <td class="py-4 px-6">1 to 3 Weeks</td>
-                        </tr>
-                        <tr>
-                            <td class="py-4 px-6 font-bold text-slate-900">Non-Resident Focus (No SSN)</td>
-                            <td class="py-4 px-6 font-bold text-slate-900 bg-blue-50/50">100% Dedicated (70+ Countries)</td>
-                            <td class="py-4 px-6 text-slate-500">Primarily US residents</td>
-                            <td class="py-4 px-6">Yes, for non-residents</td>
-                        </tr>
-                        <tr>
-                            <td class="py-4 px-6 font-bold text-slate-900">FinCEN BOI Compliance</td>
-                            <td class="py-4 px-6 font-bold text-emerald-600 bg-blue-50/50">Included in Gold / $35</td>
-                            <td class="py-4 px-6 text-slate-500">$99 Extra Fee</td>
-                            <td class="py-4 px-6">$150 Extra Fee</td>
-                        </tr>
-                        <tr>
-                            <td class="py-4 px-6 font-bold text-slate-900">Direct WhatsApp Concierge</td>
-                            <td class="py-4 px-6 font-bold text-emerald-600 bg-blue-50/50">Included (Real Person)</td>
-                            <td class="py-4 px-6 text-slate-400">None (Email tickets only)</td>
-                            <td class="py-4 px-6">Available on high plans</td>
-                        </tr>
-                    </tbody>
-                </table>
+    <!-- BOTTOM HERO PRE-FOOTER (DOOLA 1:1 BANNER REPLICA) -->
+    <section class="py-20 bg-slate-900 text-white text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-5xl font-extrabold font-display mb-6">
+                Form a US LLC, set up a US bank account, pay taxes, and unlock Stripe payments.
+            </h2>
+            <p class="text-slate-300 text-base mb-10 max-w-2xl mx-auto">
+                We’ll help you stay legal and compliant, guaranteed. Explore the process before paying.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <button onclick="openWizardModal()" class="w-full sm:w-auto px-8 py-4 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-sm transition">
+                    Get Started for Free &rarr;
+                </button>
+                <a href="contact.html" class="w-full sm:w-auto px-8 py-4 rounded-full bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 font-bold text-sm transition">
+                    Talk to an Expert (Free)
+                </a>
             </div>
         </div>
     </section>
@@ -502,47 +674,48 @@
                         <div class="w-7 h-7 rounded-lg bg-brand-600 flex items-center justify-center font-display font-bold text-white text-sm">V</div>
                         <span class="font-display font-bold text-lg text-white">Vent<span class="text-brand-500">Next</span></span>
                     </div>
-                    <p class="text-slate-400 text-xs mb-4 max-w-sm">
-                        VentNext LTD is an international corporate advisory and document filing provider operating in London, United Kingdom. Specializing in US entity formation across all 50 states and international tax infrastructure.
+                    <p class="text-slate-400 text-xs mb-4 max-w-sm leading-relaxed">
+                        Unify your business back office with VentNext—an all-in-one platform that handles LLC Formation, Bookkeeping, Taxes, and E-commerce Analytics.
                     </p>
                     <div class="text-[11px] text-slate-500">
-                        Registered in England & Wales • 128 City Road, London, EC1V 2NX
+                        128 City Road, London, EC1V 2NX, United Kingdom
                     </div>
                 </div>
 
                 <div>
-                    <h4 class="text-white font-bold mb-3 uppercase tracking-wider text-[11px]">Packages</h4>
+                    <h4 class="text-white font-bold mb-3 uppercase tracking-wider text-[11px]">Products</h4>
                     <ul class="space-y-2">
-                        <li><a href="#packages" class="hover:text-white transition">Silver Package ($0)</a></li>
-                        <li><a href="#packages" class="hover:text-white transition">Gold Package ($199)</a></li>
-                        <li><a href="#packages" class="hover:text-white transition">Platinum Package ($299)</a></li>
-                        <li><a href="pricing.html" class="hover:text-white transition">Full Fee Calculator</a></li>
+                        <li><a href="#product-suite" class="hover:text-white transition">Formation</a></li>
+                        <li><a href="#product-suite" class="hover:text-white transition">EIN & Taxes</a></li>
+                        <li><a href="#product-suite" class="hover:text-white transition">Bookkeeping</a></li>
+                        <li><a href="#product-suite" class="hover:text-white transition">AI Co-Founder</a></li>
+                        <li><a href="#product-suite" class="hover:text-white transition">Analytics</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4 class="text-white font-bold mb-3 uppercase tracking-wider text-[11px]">Services</h4>
+                    <h4 class="text-white font-bold mb-3 uppercase tracking-wider text-[11px]">Company</h4>
                     <ul class="space-y-2">
-                        <li><a href="services.html#llc-formation" class="hover:text-white transition">USA LLC ($0 Tier)</a></li>
-                        <li><a href="services.html#ein-service" class="hover:text-white transition">IRS 2-Day EIN Service</a></li>
-                        <li><a href="services.html#itin-application" class="hover:text-white transition">ITIN Application (W-7)</a></li>
-                        <li><a href="services.html#boi-filing" class="hover:text-white transition">FinCEN BOI Filing ($35)</a></li>
-                        <li><a href="states.html" class="hover:text-white transition">50 US States Directory</a></li>
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="#wall-of-love" class="hover:text-white transition">Wall of Love</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition">Pricing</a></li>
+                        <li><a href="states.html" class="hover:text-white transition">50 US States</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Help & Support</a></li>
                     </ul>
                 </div>
 
                 <div>
                     <h4 class="text-white font-bold mb-3 uppercase tracking-wider text-[11px]">Connect</h4>
                     <ul class="space-y-2">
-                        <li class="flex items-center gap-2"><i data-lucide="mail" class="w-3.5 h-3.5 text-slate-400"></i> support@ventnext.com</li>
-                        <li class="flex items-center gap-2"><i data-lucide="message-square" class="w-3.5 h-3.5 text-emerald-400"></i> WhatsApp Concierge Desk</li>
-                        <li class="flex items-center gap-2"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-400"></i> London, United Kingdom</li>
+                        <li><a href="mailto:support@ventnext.com" class="hover:text-white transition">support@ventnext.com</a></li>
+                        <li><a href="https://wa.me/" target="_blank" class="hover:text-emerald-400 text-emerald-500 font-semibold transition">WhatsApp Concierge Desk</a></li>
+                        <li><span class="text-slate-500">London, United Kingdom</span></li>
                     </ul>
                 </div>
             </div>
 
             <div class="border-t border-slate-900 pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-4">
-                <div>© 2026 VentNext LTD. All rights reserved. VentNext is a document preparation and filing service across all 50 US states, and not an attorney or law firm.</div>
+                <div>© 2026 VentNext LTD. All rights reserved. VentNext is not an attorney or law firm.</div>
                 <div class="flex gap-4">
                     <a href="#" class="hover:text-slate-300">Privacy Policy</a>
                     <a href="#" class="hover:text-slate-300">Terms of Service</a>
@@ -551,191 +724,66 @@
         </div>
     </footer>
 
-    <!-- INTERACTIVE 4-STEP ONBOARDING WIZARD MODAL (BIZEE & DOOLA STYLE) -->
+    <!-- INTERACTIVE ONBOARDING WIZARD MODAL -->
     <div id="wizardModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-10 border border-slate-200 shadow-2xl relative max-h-[92vh] overflow-y-auto">
-            <button onclick="closeWizard()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-800 p-2">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 border border-slate-200 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closeWizardModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-800 p-2">
                 <i data-lucide="x" class="w-5 h-5"></i>
             </button>
             
-            <!-- Wizard Header & Stepper -->
-            <div class="mb-8">
-                <div class="flex items-center justify-between mb-4">
-                    <div>
-                        <span class="text-[11px] font-bold uppercase tracking-wider text-brand-600 block">Formation Configurator</span>
-                        <h3 class="text-2xl font-bold font-display text-slate-900">Incorporate Your US Entity</h3>
-                    </div>
-                    <span class="text-xs font-bold px-3 py-1 bg-blue-50 text-brand-700 rounded-full" id="stepIndicator">Step 1 of 4</span>
-                </div>
-
-                <!-- Step Tabs Bar -->
-                <div class="grid grid-cols-4 gap-2 text-center text-xs font-bold">
-                    <div id="stepTab1" class="py-2 border-b-2 border-brand-600 text-brand-600">1. State & Entity</div>
-                    <div id="stepTab2" class="py-2 border-b-2 border-slate-200 text-slate-400">2. Package</div>
-                    <div id="stepTab3" class="py-2 border-b-2 border-slate-200 text-slate-400">3. Details</div>
-                    <div id="stepTab4" class="py-2 border-b-2 border-slate-200 text-slate-400">4. Review</div>
-                </div>
+            <div class="mb-6">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-1 block">VentNext Onboarding</span>
+                <h3 class="text-2xl font-bold font-display text-slate-900">Start Your US Business</h3>
+                <p class="text-xs text-slate-500 mt-1">Form your entity, get your EIN, and open your bank account.</p>
             </div>
 
-            <!-- STEP 1: ENTITY & STATE -->
-            <div id="wizardStep1" class="space-y-6">
+            <form onsubmit="handleWizardSubmit(event)" class="space-y-4">
                 <div>
-                    <label class="block text-xs font-bold text-slate-700 mb-2">Desired Company Name</label>
-                    <div class="flex gap-2">
-                        <input type="text" id="wizCompanyName" required placeholder="e.g. VentNext Global Technologies" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs font-semibold focus:outline-none focus:border-brand-600 focus:bg-white">
-                        <select id="wizSuffix" class="px-3 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-800 text-xs font-semibold">
-                            <option value="LLC">LLC</option>
-                            <option value="L.L.C.">L.L.C.</option>
-                            <option value="Limited Liability Company">Limited Liability Co.</option>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Company Name</label>
+                    <input type="text" id="modalCompanyName" required placeholder="e.g. VentNext Global Technologies LLC" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:bg-white focus:border-brand-600">
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">State of Formation</label>
+                        <select id="modalStateSelect" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:bg-white focus:border-brand-600">
+                            <option value="Wyoming">Wyoming ($102 fee)</option>
+                            <option value="New Mexico">New Mexico ($50 fee)</option>
+                            <option value="Delaware">Delaware ($90 fee)</option>
+                            <option value="Florida">Florida ($125 fee)</option>
+                            <option value="Texas">Texas ($300 fee)</option>
                         </select>
                     </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Citizen / Country</label>
+                        <input type="text" id="modalCountry" required placeholder="e.g. Bangladesh / UK" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:bg-white focus:border-brand-600">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Full Legal Name</label>
+                        <input type="text" id="modalName" required placeholder="MD Ridwan Islam" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:bg-white focus:border-brand-600">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">WhatsApp / Phone</label>
+                        <input type="tel" id="modalPhone" required placeholder="+880 1700 000000" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:bg-white focus:border-brand-600">
+                    </div>
                 </div>
 
                 <div>
-                    <label class="block text-xs font-bold text-slate-700 mb-2">State of Formation (All 50 States)</label>
-                    <select id="wizStateSelect" onchange="calcWizardTotal()" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs font-semibold focus:outline-none focus:border-brand-600 focus:bg-white">
-                        <option value="Wyoming" data-fee="102">Wyoming — $102 State Fee (#1 Choice for Anonymity & Low Upkeep)</option>
-                        <option value="New Mexico" data-fee="50">New Mexico — $50 State Fee (Lowest Startup Fee & $0 Annual Report)</option>
-                        <option value="Delaware" data-fee="90">Delaware — $90 State Fee (Best for VC & Angel Investment)</option>
-                        <option value="Florida" data-fee="125">Florida — $125 State Fee (Best for E-Commerce & Logistics)</option>
-                        <option value="Texas" data-fee="300">Texas — $300 State Fee (Booming Economy, 0% Income Tax)</option>
-                        <option value="California" data-fee="70">California — $70 State Fee</option>
-                    </select>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Email Address</label>
+                    <input type="email" id="modalEmail" required placeholder="founder@company.com" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:bg-white focus:border-brand-600">
                 </div>
 
-                <div class="p-4 bg-blue-50/60 rounded-2xl border border-blue-200 text-xs text-slate-700 space-y-1">
-                    <strong class="text-brand-900 block font-bold">💡 Recommended for Non-Residents:</strong>
-                    <span>If you operate 100% online (SaaS, Agency, Freelancing), <strong>Wyoming ($102)</strong> or <strong>New Mexico ($50)</strong> are optimal for zero state taxes and total privacy.</span>
-                </div>
-
-                <button onclick="goToStep(2)" class="w-full py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs uppercase tracking-wider transition shadow-md shadow-brand-600/20">
-                    Next: Choose Package Tier &rarr;
+                <button type="submit" class="w-full py-3.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider transition shadow-md">
+                    Proceed to Filing Desk &rarr;
                 </button>
-            </div>
-
-            <!-- STEP 2: CHOOSE PACKAGE TIER -->
-            <div id="wizardStep2" class="space-y-6 hidden">
-                <label class="block text-xs font-bold text-slate-700 mb-2">Select Your Package</label>
-                <div class="space-y-3">
-                    <label class="flex items-center justify-between p-4 rounded-2xl border-2 cursor-pointer transition border-slate-200 hover:border-brand-600" id="tierLabelSilver">
-                        <div class="flex items-center gap-3">
-                            <input type="radio" name="wizTier" value="Silver" data-fee="0" onchange="calcWizardTotal()" class="w-4 h-4 text-brand-600">
-                            <div>
-                                <div class="text-sm font-bold text-slate-900">Silver Package ($0 Service Fee)</div>
-                                <div class="text-xs text-slate-500">Articles of Organization + 1-Year Free Registered Agent</div>
-                            </div>
-                        </div>
-                        <span class="text-sm font-extrabold text-emerald-600 font-display">$0</span>
-                    </label>
-
-                    <label class="flex items-center justify-between p-4 rounded-2xl border-2 cursor-pointer transition border-brand-600 bg-blue-50/20 shadow-sm" id="tierLabelGold">
-                        <div class="flex items-center gap-3">
-                            <input type="radio" name="wizTier" value="Gold" data-fee="199" checked onchange="calcWizardTotal()" class="w-4 h-4 text-brand-600">
-                            <div>
-                                <div class="text-sm font-bold text-slate-900 flex items-center gap-2">
-                                    Gold Package (Recommended)
-                                    <span class="px-2 py-0.5 rounded bg-brand-100 text-brand-700 text-[10px] font-bold">Bank-Ready</span>
-                                </div>
-                                <div class="text-xs text-slate-500">Includes 2-Day Fast EIN, Operating Agreement & FinCEN BOI</div>
-                            </div>
-                        </div>
-                        <span class="text-sm font-extrabold text-slate-900 font-display">$199</span>
-                    </label>
-
-                    <label class="flex items-center justify-between p-4 rounded-2xl border-2 cursor-pointer transition border-slate-200 hover:border-brand-600" id="tierLabelPlatinum">
-                        <div class="flex items-center gap-3">
-                            <input type="radio" name="wizTier" value="Platinum" data-fee="299" onchange="calcWizardTotal()" class="w-4 h-4 text-brand-600">
-                            <div>
-                                <div class="text-sm font-bold text-slate-900">Platinum Package (VIP Turnkey)</div>
-                                <div class="text-xs text-slate-500">Gold inclusions + Expedited Filing & Certified ITIN Assistance</div>
-                            </div>
-                        </div>
-                        <span class="text-sm font-extrabold text-slate-900 font-display">$299</span>
-                    </label>
-                </div>
-
-                <div class="flex gap-3">
-                    <button onclick="goToStep(1)" class="w-1/3 py-3.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs uppercase tracking-wider transition">Back</button>
-                    <button onclick="goToStep(3)" class="w-2/3 py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs uppercase tracking-wider transition shadow-md shadow-brand-600/20">Next: Founder Details &rarr;</button>
-                </div>
-            </div>
-
-            <!-- STEP 3: FOUNDER DETAILS -->
-            <div id="wizardStep3" class="space-y-4 hidden">
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-xs font-semibold text-slate-700 mb-1">Full Legal Name (as on Passport)</label>
-                        <input type="text" id="wizOwnerName" required placeholder="MD Ridwan Islam" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:bg-white focus:border-brand-600">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold text-slate-700 mb-1">Country of Citizenship</label>
-                        <input type="text" id="wizCountry" required placeholder="e.g. Bangladesh / UK / UAE" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:bg-white focus:border-brand-600">
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-xs font-semibold text-slate-700 mb-1">WhatsApp / Phone Number</label>
-                        <input type="tel" id="wizPhone" required placeholder="+880 1700 000000" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:bg-white focus:border-brand-600">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold text-slate-700 mb-1">Email Address</label>
-                        <input type="email" id="wizEmail" required placeholder="founder@company.com" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:bg-white focus:border-brand-600">
-                    </div>
-                </div>
-
-                <div class="p-3.5 bg-slate-50 rounded-2xl border border-slate-200 text-[11px] text-slate-600">
-                    <strong class="text-slate-900 block mb-0.5">🔒 100% Non-Resident Secure Filing:</strong>
-                    <span>No US Social Security Number (SSN) or US physical address is required. All filings are made directly through official state & IRS channels.</span>
-                </div>
-
-                <div class="flex gap-3">
-                    <button onclick="goToStep(2)" class="w-1/3 py-3.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs uppercase tracking-wider transition">Back</button>
-                    <button onclick="goToStep(4)" class="w-2/3 py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs uppercase tracking-wider transition shadow-md shadow-brand-600/20">Next: Review Order &rarr;</button>
-                </div>
-            </div>
-
-            <!-- STEP 4: REVIEW & CONFIRM -->
-            <div id="wizardStep4" class="space-y-6 hidden">
-                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-3 text-xs">
-                    <div class="flex justify-between pb-2 border-b border-slate-200">
-                        <span class="text-slate-500 font-medium">Company Name:</span>
-                        <strong class="text-slate-900" id="revCompanyName">VentNext LLC</strong>
-                    </div>
-                    <div class="flex justify-between pb-2 border-b border-slate-200">
-                        <span class="text-slate-500 font-medium">State & Secretary Fee:</span>
-                        <strong class="text-slate-900" id="revStateFee">Wyoming ($102)</strong>
-                    </div>
-                    <div class="flex justify-between pb-2 border-b border-slate-200">
-                        <span class="text-slate-500 font-medium">Selected Package:</span>
-                        <strong class="text-slate-900" id="revPackage">Gold Package ($199)</strong>
-                    </div>
-                    <div class="flex justify-between pb-2 border-b border-slate-200">
-                        <span class="text-slate-500 font-medium">1-Year Registered Agent:</span>
-                        <strong class="text-emerald-600 font-bold">Included FREE</strong>
-                    </div>
-                    <div class="flex justify-between pb-2 border-b border-slate-200">
-                        <span class="text-slate-500 font-medium">Founder:</span>
-                        <strong class="text-slate-900" id="revOwnerName">MD Ridwan Islam</strong>
-                    </div>
-                    <div class="flex justify-between items-baseline pt-2">
-                        <span class="text-sm font-bold text-slate-900">Total Investment:</span>
-                        <span class="text-3xl font-black text-brand-600 font-display" id="revTotal">$301</span>
-                    </div>
-                </div>
-
-                <div class="flex gap-3">
-                    <button onclick="goToStep(3)" class="w-1/3 py-3.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs uppercase tracking-wider transition">Back</button>
-                    <button onclick="submitWizardOrder()" class="w-2/3 py-3.5 rounded-xl bg-gradient-to-r from-brand-600 to-emerald-600 hover:from-brand-700 text-white font-bold text-xs uppercase tracking-wider transition shadow-lg shadow-brand-600/25">
-                        Confirm & Proceed to Legal Desk &rarr;
-                    </button>
-                </div>
-            </div>
-
+            </form>
         </div>
     </div>
 
-    <!-- SCRIPT LOGIC -->
+    <!-- SCRIPT LOGIC (TABS, TOGGLE, WIZARD) -->
     <script>
         lucide.createIcons();
 
@@ -743,110 +791,72 @@
             document.getElementById('mobileMenu').classList.toggle('hidden');
         }
 
-        // Quick Estimator on Hero
-        function updateQuickEstimator() {
-            const stateSelect = document.getElementById('quickStateSelect');
-            const stateFee = parseInt(stateSelect.options[stateSelect.selectedIndex].getAttribute('data-fee')) || 102;
-            
-            const pkgSelect = document.getElementById('quickPackageSelect');
-            const pkgFee = parseInt(pkgSelect.options[pkgSelect.selectedIndex].getAttribute('data-fee')) || 0;
-            
-            document.getElementById('quickPkgFee').innerText = '$' + pkgFee;
-            document.getElementById('quickStateFee').innerText = '$' + stateFee;
-            document.getElementById('quickTotal').innerText = '$' + (pkgFee + stateFee);
+        // Product Suite Tab Switching
+        function switchTab(tabId) {
+            const tabs = ['formation', 'bookkeeping', 'taxes', 'ai', 'analytics'];
+            tabs.forEach(t => {
+                const btn = document.getElementById(`tabBtn-${t}`);
+                const content = document.getElementById(`tabContent-${t}`);
+                if (t === tabId) {
+                    btn.classList.add('active');
+                    btn.classList.remove('text-slate-700', 'bg-white');
+                    content.classList.remove('hidden');
+                } else {
+                    btn.classList.remove('active');
+                    btn.classList.add('text-slate-700', 'bg-white');
+                    content.classList.add('hidden');
+                }
+            });
         }
 
-        function startWizard() {
-            document.getElementById('wizardModal').classList.remove('hidden');
-            goToStep(1);
-        }
+        // Pricing Annual vs Monthly Switch
+        function setBilling(mode) {
+            const annualBtn = document.getElementById('billBtn-annual');
+            const monthlyBtn = document.getElementById('billBtn-monthly');
 
-        function startWizardWithState() {
-            const state = document.getElementById('quickStateSelect').value;
-            const stateSelect = document.getElementById('wizStateSelect');
-            if (stateSelect) stateSelect.value = state;
-            startWizard();
-        }
+            const priceStarter = document.getElementById('priceStarter');
+            const priceTax = document.getElementById('priceTax');
+            const priceBox = document.getElementById('priceBox');
+            const priceBoxLabel = document.getElementById('priceBoxLabel');
 
-        function launchPlanWizard(tierName, tierFee) {
-            startWizard();
-            const radios = document.getElementsByName('wizTier');
-            for(let r of radios) {
-                if (r.value === tierName) r.checked = true;
+            if (mode === 'monthly') {
+                monthlyBtn.classList.add('bg-white', 'text-slate-900', 'shadow-sm');
+                monthlyBtn.classList.remove('text-slate-600');
+                annualBtn.classList.remove('bg-white', 'text-slate-900', 'shadow-sm');
+                annualBtn.classList.add('text-slate-600');
+
+                priceStarter.innerText = '$29';
+                priceTax.innerText = '$199';
+                priceBox.innerText = '$329';
+                priceBoxLabel.innerText = ' / mo + State Fees';
+            } else {
+                annualBtn.classList.add('bg-white', 'text-slate-900', 'shadow-sm');
+                annualBtn.classList.remove('text-slate-600');
+                monthlyBtn.classList.remove('bg-white', 'text-slate-900', 'shadow-sm');
+                monthlyBtn.classList.add('text-slate-600');
+
+                priceStarter.innerText = '$297';
+                priceTax.innerText = '$1,999';
+                priceBox.innerText = '$2,999';
+                priceBoxLabel.innerText = ' / yr + State Fees';
             }
-            goToStep(1);
         }
 
-        function closeWizard() {
+        // Modal Logic
+        function openWizardModal() {
+            document.getElementById('wizardModal').classList.remove('hidden');
+        }
+        function closeWizardModal() {
             document.getElementById('wizardModal').classList.add('hidden');
         }
-
-        // Multi-Step Wizard Flow
-        let currentWizStep = 1;
-
-        function goToStep(step) {
-            currentWizStep = step;
-            document.getElementById('stepIndicator').innerText = `Step ${step} of 4`;
-
-            // Hide all steps
-            for (let i = 1; i <= 4; i++) {
-                document.getElementById(`wizardStep${i}`).classList.add('hidden');
-                const tab = document.getElementById(`stepTab${i}`);
-                if (i <= step) {
-                    tab.classList.add('border-brand-600', 'text-brand-600');
-                    tab.classList.remove('border-slate-200', 'text-slate-400');
-                } else {
-                    tab.classList.remove('border-brand-600', 'text-brand-600');
-                    tab.classList.add('border-slate-200', 'text-slate-400');
-                }
-            }
-
-            document.getElementById(`wizardStep${step}`).classList.remove('hidden');
-
-            if (step === 4) {
-                calcWizardTotal();
-            }
+        function handleWizardSubmit(e) {
+            e.preventDefault();
+            const comp = document.getElementById('modalCompanyName').value;
+            const name = document.getElementById('modalName').value;
+            const phone = document.getElementById('modalPhone').value;
+            alert(`✅ Application received for ${comp}!\nFounder: ${name}\nContact: ${phone}\n\nOur legal formation desk will connect with you immediately via WhatsApp/Email.`);
+            closeWizardModal();
         }
-
-        function calcWizardTotal() {
-            const companyName = (document.getElementById('wizCompanyName').value.trim() || 'My Company') + ' ' + document.getElementById('wizSuffix').value;
-            const stateSelect = document.getElementById('wizStateSelect');
-            const stateName = stateSelect.value;
-            const stateFee = parseInt(stateSelect.options[stateSelect.selectedIndex].getAttribute('data-fee')) || 102;
-
-            let pkgFee = 199;
-            let pkgName = 'Gold Package';
-            const radios = document.getElementsByName('wizTier');
-            for (let r of radios) {
-                if (r.checked) {
-                    pkgName = r.value + ' Package';
-                    pkgFee = parseInt(r.getAttribute('data-fee')) || 0;
-                }
-            }
-
-            const ownerName = document.getElementById('wizOwnerName').value.trim() || 'Founder';
-
-            document.getElementById('revCompanyName').innerText = companyName;
-            document.getElementById('revStateFee').innerText = `${stateName} ($${stateFee})`;
-            document.getElementById('revPackage').innerText = `${pkgName} ($${pkgFee})`;
-            document.getElementById('revOwnerName').innerText = ownerName;
-            document.getElementById('revTotal').innerText = '$' + (stateFee + pkgFee);
-        }
-
-        function submitWizardOrder() {
-            const comp = document.getElementById('revCompanyName').innerText;
-            const total = document.getElementById('revTotal').innerText;
-            const phone = document.getElementById('wizPhone').value;
-            const email = document.getElementById('wizEmail').value;
-            const owner = document.getElementById('revOwnerName').innerText;
-
-            alert(`✅ Order Received for VentNext Legal Desk!\n\nCompany: ${comp}\nFounder: ${owner}\nTotal: ${total}\nContact: ${phone} (${email})\n\nOur formation officer will contact you immediately via WhatsApp/Email.`);
-            closeWizard();
-        }
-
-        window.addEventListener('DOMContentLoaded', () => {
-            updateQuickEstimator();
-        });
     </script>
 </body>
 </html>
