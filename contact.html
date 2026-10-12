@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact & Concierge Desk | VentNext Corporate Advisory</title>
-    <meta name="description" content="Reach VentNext corporate advisory desk for US LLC formation, expedited EIN, and FinCEN compliance inquiries. WhatsApp concierge and London HQ.">
+    <meta name="description" content="Reach the VentNext corporate advisory desk for US LLC formation, expedited EIN, and FinCEN compliance inquiries. WhatsApp concierge and London HQ.">
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -29,7 +29,8 @@
                             600: '#2563eb',
                             700: '#1d4ed8',
                             800: '#1e40af',
-                            900: '#1e3a8a',
+                            900: '#0f172a',
+                            emerald: '#10b981',
                         }
                     }
                 }
@@ -37,215 +38,420 @@
         }
     </script>
     <style>
-        .corp-card {
+        .doola-card {
             background: #ffffff;
             border: 1px solid #e2e8f0;
-            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 1px 2px -1px rgba(0, 0, 0, 0.04);
+            border-radius: 1.5rem;
+            transition: all 0.25s ease;
+        }
+        .doola-card:hover {
+            border-color: #cbd5e1;
+            box-shadow: 0 20px 30px -10px rgba(15, 23, 42, 0.08);
+            transform: translateY(-2px);
         }
     </style>
 </head>
-<body class="bg-slate-50/60 text-slate-800 font-sans antialiased selection:bg-brand-600 selection:text-white min-h-screen">
+<body class="bg-white text-slate-900 font-sans antialiased selection:bg-brand-600 selection:text-white min-h-screen">
 
-    <!-- Top Announcement -->
-    <div class="bg-brand-900 text-white text-xs font-medium py-2.5 px-4 text-center border-b border-brand-800">
-        <span>Dedicated WhatsApp Concierge Desk is active 7 days a week for international founders.</span>
+    <!-- Top Announcement Bar -->
+    <div class="bg-slate-900 text-white text-xs font-semibold py-2.5 px-4 text-center border-b border-slate-800 flex items-center justify-center gap-2">
+        <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-bold border border-emerald-400/30 text-[11px]">
+            ⚡ 2026 Founder Release
+        </span>
+        <span class="text-slate-200">How Global Businesses Stay Compliant • $0 Formation Service Fee Tier Available!</span>
+        <a href="pricing.html" class="underline hover:text-white ml-1 font-bold inline-flex items-center gap-1">Get Started <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
     </div>
 
-    <!-- Header Navigation -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm">
+    <!-- doola-style Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="index.html" class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-brand-900 flex items-center justify-center text-white font-display font-black text-xl shadow-md">
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center gap-2.5 group">
+                <div class="w-9 h-9 rounded-xl bg-slate-900 flex items-center justify-center text-white font-display font-extrabold text-xl group-hover:scale-105 transition-transform">
                     V
                 </div>
                 <div class="flex flex-col">
-                    <span class="font-display font-bold text-2xl tracking-tight text-slate-900">
+                    <span class="font-display font-bold text-2xl tracking-tight text-slate-900 flex items-center">
                         Vent<span class="text-brand-600">Next</span>
                     </span>
-                    <span class="text-[10px] uppercase tracking-widest text-slate-500 font-bold -mt-1">Corporate & Tax</span>
+                    <span class="text-[9px] uppercase tracking-widest text-slate-400 font-bold -mt-1">Business-in-a-Box™</span>
                 </div>
             </a>
 
-            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
-                <a href="index.html" class="hover:text-slate-900 transition-colors">Home</a>
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-600">
+                <a href="index.html" class="hover:text-slate-900 transition-colors">Overview</a>
                 <a href="services.html" class="hover:text-slate-900 transition-colors">Services</a>
                 <a href="states.html" class="hover:text-slate-900 transition-colors flex items-center gap-1.5">
                     <span>50 States</span>
-                    <span class="px-1.5 py-0.5 rounded-full bg-brand-50 text-brand-700 text-[10px] font-bold border border-brand-200">50</span>
+                    <span class="px-1.5 py-0.5 rounded-full bg-brand-50 text-brand-700 text-[10px] font-bold">50</span>
                 </a>
-                <a href="pricing.html" class="hover:text-slate-900 transition-colors">Pricing & Calculator</a>
-                <a href="about.html" class="hover:text-slate-900 transition-colors">About Us</a>
+                <a href="pricing.html" class="hover:text-slate-900 transition-colors">Pricing</a>
+                <a href="index.html#wall-of-love" class="hover:text-slate-900 transition-colors">Wall of Love</a>
+                <a href="about.html" class="hover:text-slate-900 transition-colors">About</a>
                 <a href="contact.html" class="text-brand-600 font-bold border-b-2 border-brand-600 pb-1">Contact</a>
             </nav>
 
-            <a href="https://wa.me/" target="_blank" class="hidden sm:flex items-center gap-1.5 px-4 py-2 rounded-xl bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 text-emerald-700 text-xs font-bold transition">
-                <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i> WhatsApp Desk
-            </a>
+            <!-- Action Buttons -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="https://wa.me/" target="_blank" class="text-xs font-semibold text-slate-700 hover:text-emerald-700 flex items-center gap-1.5 px-3.5 py-2.5 rounded-full border border-slate-200 hover:border-emerald-300 transition bg-slate-50">
+                    <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i> WhatsApp
+                </a>
+                <button onclick="openWizardModal()" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold px-6 py-2.5 rounded-full shadow-md transition flex items-center gap-1.5">
+                    Get Started for Free <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button onclick="toggleMobileMenu()" class="md:hidden text-slate-700 p-2">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden px-4 pt-2 pb-6 bg-white border-b border-slate-200 text-sm font-semibold text-slate-700">
+            <div class="flex flex-col gap-3">
+                <a href="index.html" class="py-2 border-b border-slate-100">Overview</a>
+                <a href="services.html" class="py-2 border-b border-slate-100">Services</a>
+                <a href="states.html" class="py-2 border-b border-slate-100">50 US States Directory</a>
+                <a href="pricing.html" class="py-2 border-b border-slate-100">Pricing Packages</a>
+                <a href="index.html#wall-of-love" class="py-2 border-b border-slate-100">Wall of Love</a>
+                <a href="about.html" class="py-2 border-b border-slate-100">About VentNext</a>
+                <a href="contact.html" class="py-2 text-brand-600 font-bold">Contact</a>
+                <button onclick="openWizardModal(); toggleMobileMenu()" class="w-full bg-slate-900 text-white font-bold py-3 rounded-full mt-2 text-center">
+                    Get Started for Free
+                </button>
+            </div>
         </div>
     </header>
 
-    <!-- Page Header -->
-    <div class="py-16 bg-white border-b border-slate-200 text-center">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <span class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2 block">CLIENT CONCIERGE</span>
-            <h1 class="text-4xl sm:text-5xl font-extrabold font-display text-slate-900 mb-4">Connect with Our Formation Desk</h1>
-            <p class="text-slate-600 text-base max-w-2xl mx-auto">
-                Have specific jurisdiction questions, complex member structures, or banking inquiries? Our corporate legal team responds within 2 hours.
+    <!-- HERO SECTION -->
+    <section class="relative pt-16 pb-20 bg-slate-50/50 border-b border-slate-100 text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-slate-200 text-xs font-bold text-slate-700 mb-6 shadow-sm">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>Live Concierge Desk Active 7 Days a Week</span>
+            </div>
+            
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-display tracking-tight text-slate-900 mb-6 leading-tight">
+                Connect with Our US Formation Specialists
+            </h1>
+            
+            <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto mb-6 leading-relaxed">
+                Have specific jurisdiction questions, complex multi-member structures, or need expedited 2-day EIN guidance? Our corporate filing desk responds within 15 minutes.
             </p>
         </div>
-    </div>
+    </section>
 
-    <!-- CONTACT FORM & DETAILS -->
-    <div class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+    <!-- CONTACT CHANNELS & FORM -->
+    <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             
-            <!-- Contact Form -->
-            <div class="lg:col-span-7 corp-card p-8 sm:p-10 rounded-3xl">
-                <h2 class="text-2xl font-bold font-display text-slate-900 mb-2">Send a Corporate Inquiry</h2>
-                <p class="text-xs text-slate-500 mb-8">Fill in your requirements and a dedicated formation officer will reach out with customized options.</p>
-
-                <form onsubmit="handleContactSubmit(event)" class="space-y-4">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-700 mb-1">Full Legal Name</label>
-                            <input type="text" id="contactName" required placeholder="MD Ridwan Islam" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:outline-none focus:border-brand-600 focus:bg-white">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-700 mb-1">Email Address</label>
-                            <input type="email" id="contactEmail" required placeholder="founder@company.com" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:outline-none focus:border-brand-600 focus:bg-white">
-                        </div>
-                    </div>
-
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-700 mb-1">WhatsApp / Phone Number</label>
-                            <input type="tel" id="contactPhone" required placeholder="+880 1700 000000" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:outline-none focus:border-brand-600 focus:bg-white">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-700 mb-1">Country of Citizenship</label>
-                            <input type="text" id="contactCountry" required placeholder="e.g. Bangladesh / UK / UAE" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:outline-none focus:border-brand-600 focus:bg-white">
-                        </div>
-                    </div>
-
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-700 mb-1">Primary State of Interest</label>
-                            <select id="contactState" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:outline-none focus:border-brand-600 focus:bg-white">
-                                <option value="Wyoming">Wyoming ($102 state fee)</option>
-                                <option value="New Mexico">New Mexico ($50 state fee)</option>
-                                <option value="Delaware">Delaware ($90 state fee)</option>
-                                <option value="Florida">Florida ($125 state fee)</option>
-                                <option value="Texas">Texas ($300 state fee)</option>
-                                <option value="Other">Other of the 50 US States</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-700 mb-1">Service Required</label>
-                            <select id="contactService" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:outline-none focus:border-brand-600 focus:bg-white">
-                                <option value="Full Package Formation">Full Package LLC + 2-Day EIN</option>
-                                <option value="LLC Formation Only">USA LLC Formation ($0 Service Fee)</option>
-                                <option value="Fast EIN Only">IRS 2-Day Fast EIN Service</option>
-                                <option value="ITIN Only">ITIN Application (W-7 CAA)</option>
-                                <option value="FinCEN BOI Only">FinCEN BOI Filing ($35)</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div>
-                        <label class="block text-xs font-semibold text-slate-700 mb-1">Additional Project Details / Questions</label>
-                        <textarea id="contactMessage" rows="4" placeholder="Tell us about your business model (e.g. SaaS, E-commerce, Agency, Freelancing)..." class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:outline-none focus:border-brand-600 focus:bg-white"></textarea>
-                    </div>
-
-                    <button type="submit" class="w-full py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs uppercase tracking-wider transition shadow-md shadow-brand-600/20">
-                        Submit Inquiry to Legal Desk
-                    </button>
-                </form>
-            </div>
-
-            <!-- Corporate Headquarters & Channels -->
+            <!-- Left Column: Contact Channels & Trust -->
             <div class="lg:col-span-5 space-y-6">
-                <!-- Direct WhatsApp Box -->
-                <div class="corp-card p-6 rounded-3xl border border-emerald-200 bg-emerald-50/40">
-                    <div class="flex items-center gap-3 mb-3">
-                        <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">
-                            <i data-lucide="message-circle" class="w-5 h-5"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-base font-bold text-slate-900">Direct WhatsApp Concierge</h4>
-                            <span class="text-xs text-emerald-700 font-bold">Immediate Live Chat</span>
-                        </div>
+                
+                <!-- WhatsApp Desk Card (Direct Channel) -->
+                <div class="doola-card p-6 border-2 border-emerald-500/30 bg-emerald-50/20">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-emerald-800">Fastest Response</span>
+                        <span class="flex items-center gap-1.5 text-[11px] font-bold text-emerald-700 bg-white px-2.5 py-1 rounded-full border border-emerald-200">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Online Now
+                        </span>
                     </div>
-                    <p class="text-xs text-slate-600 mb-4 leading-relaxed">
-                        For immediate questions or to send identity documentation directly, connect with our concierge team.
+                    <h3 class="text-xl font-bold font-display text-slate-900 mb-2">WhatsApp Concierge Desk</h3>
+                    <p class="text-xs text-slate-600 mb-5 leading-relaxed">
+                        Message directly with a senior formation specialist. Get instant answers about state selection, pricing, and required documentation.
                     </p>
-                    <a href="https://wa.me/" target="_blank" class="w-full py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider transition flex items-center justify-center gap-2 shadow-sm">
-                        <i data-lucide="message-square" class="w-4 h-4"></i> Chat on WhatsApp
+                    <a href="https://wa.me/" target="_blank" class="w-full py-3 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider transition flex items-center justify-center gap-2 shadow-md shadow-emerald-600/20">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i> Chat on WhatsApp Now
                     </a>
                 </div>
 
-                <!-- London HQ Address -->
-                <div class="corp-card p-6 rounded-3xl">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-10 h-10 rounded-xl bg-blue-50 text-brand-600 flex items-center justify-center font-bold">
-                            <i data-lucide="map-pin" class="w-5 h-5"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-base font-bold text-slate-900">London Headquarters</h4>
-                            <span class="text-xs text-slate-500">VentNext LTD</span>
-                        </div>
-                    </div>
-                    <div class="text-xs text-slate-600 space-y-1.5 leading-relaxed">
-                        <div>128 City Road</div>
-                        <div>London, EC1V 2NX</div>
-                        <div>United Kingdom</div>
-                        <div class="text-slate-400 pt-2 font-medium">Company No. Registered in England & Wales</div>
-                    </div>
-                </div>
-
-                <!-- Direct Support Contacts -->
-                <div class="corp-card p-6 rounded-3xl">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-10 h-10 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center font-bold">
+                <!-- Priority Email Desk -->
+                <div class="doola-card p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-blue-100 text-brand-600 flex items-center justify-center flex-shrink-0 font-bold">
                             <i data-lucide="mail" class="w-5 h-5"></i>
                         </div>
                         <div>
-                            <h4 class="text-base font-bold text-slate-900">Electronic Concierge</h4>
-                            <span class="text-xs text-brand-600 font-semibold">support@ventnext.com</span>
+                            <span class="text-xs text-slate-400 font-bold uppercase">Official Inquiries</span>
+                            <h4 class="text-base font-bold text-slate-900">Priority Email Support</h4>
+                            <p class="text-xs text-slate-600 mt-1 mb-2">Dedicated inbox for document submission and compliance questions.</p>
+                            <a href="mailto:support@ventnext.com" class="text-xs font-bold text-brand-600 hover:underline">support@ventnext.com</a>
                         </div>
                     </div>
-                    <div class="text-xs text-slate-500 space-y-1">
-                        <div>Response SLA: <strong class="text-slate-800">Under 2 hours</strong></div>
-                        <div>Working Days: <strong class="text-slate-800">Monday - Sunday (7 Days)</strong></div>
+                </div>
+
+                <!-- Global Office Locations -->
+                <div class="doola-card p-6 space-y-4">
+                    <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block">Registered Physical Locations</span>
+                    
+                    <div class="flex items-start gap-3 text-xs text-slate-600 border-b border-slate-100 pb-3">
+                        <i data-lucide="map-pin" class="w-4 h-4 text-slate-400 flex-shrink-0 mt-0.5"></i>
+                        <div>
+                            <strong class="text-slate-900 block">London Headquarters (UK)</strong>
+                            <span>128 City Road, London, EC1V 2NX, United Kingdom</span>
+                        </div>
                     </div>
+
+                    <div class="flex items-start gap-3 text-xs text-slate-600">
+                        <i data-lucide="map-pin" class="w-4 h-4 text-slate-400 flex-shrink-0 mt-0.5"></i>
+                        <div>
+                            <strong class="text-slate-900 block">Wyoming Filing Office (US)</strong>
+                            <span>30 N Gould St, Ste R, Sheridan, WY 82801, USA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guarantee Badge -->
+                <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs text-slate-600 flex items-center gap-3">
+                    <i data-lucide="shield-check" class="w-6 h-6 text-brand-600 flex-shrink-0"></i>
+                    <span>All inquiries handled with strict attorney-client style data privacy and institutional SSL encryption.</span>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Corporate Inquiry Form -->
+            <div class="lg:col-span-7">
+                <div class="doola-card p-8 sm:p-10 shadow-lg">
+                    <div class="mb-8">
+                        <span class="text-xs font-bold uppercase tracking-widest text-brand-600 block mb-1">DIRECT INTAKE</span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold font-display text-slate-900">Send an Advisory Request</h2>
+                        <p class="text-xs text-slate-500 mt-1">Our corporate officers review your business profile and suggest the most tax-efficient structure.</p>
+                    </div>
+
+                    <form onsubmit="handleContactPageSubmit(event)" class="space-y-4 text-xs">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block font-semibold text-slate-700 mb-1.5">Full Legal Name</label>
+                                <input type="text" id="intakeName" required placeholder="MD Ridwan Islam" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:bg-white focus:border-brand-600 focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="block font-semibold text-slate-700 mb-1.5">Email Address</label>
+                                <input type="email" id="intakeEmail" required placeholder="founder@company.com" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:bg-white focus:border-brand-600 focus:outline-none">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block font-semibold text-slate-700 mb-1.5">WhatsApp / Phone Number</label>
+                                <input type="tel" id="intakePhone" required placeholder="+880 1700 000000" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:bg-white focus:border-brand-600 focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="block font-semibold text-slate-700 mb-1.5">Citizenship / Country</label>
+                                <input type="text" id="intakeCountry" required placeholder="e.g. Bangladesh / UK / UAE" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:bg-white focus:border-brand-600 focus:outline-none">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block font-semibold text-slate-700 mb-1.5">Preferred State</label>
+                                <select id="intakeState" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:bg-white focus:border-brand-600 focus:outline-none">
+                                    <option value="Wyoming">Wyoming ($102 fee - Best for privacy)</option>
+                                    <option value="New Mexico">New Mexico ($50 fee - Lowest cost)</option>
+                                    <option value="Delaware">Delaware ($90 fee - Best for VC)</option>
+                                    <option value="Florida">Florida ($125 fee - E-Commerce)</option>
+                                    <option value="Texas">Texas ($300 fee - Tech)</option>
+                                    <option value="Other">Other of 50 US States</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block font-semibold text-slate-700 mb-1.5">Primary Business Activity</label>
+                                <select id="intakeActivity" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:bg-white focus:border-brand-600 focus:outline-none">
+                                    <option value="Software / SaaS">Software & SaaS Agency</option>
+                                    <option value="E-Commerce / Amazon">E-Commerce & Amazon FBA</option>
+                                    <option value="Digital Consulting">Digital Agency & Freelancing</option>
+                                    <option value="Holding Company">Holding & Investment Company</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block font-semibold text-slate-700 mb-1.5">Questions or Specific Requirements</label>
+                            <textarea id="intakeNotes" rows="4" placeholder="Tell us about your company goals, Stripe needs, or timeline..." class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:bg-white focus:border-brand-600 focus:outline-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-3.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider transition shadow-md">
+                            Submit Inquiry to Formation Desk &rarr;
+                        </button>
+                    </form>
                 </div>
             </div>
 
         </div>
-    </div>
+    </section>
 
-    <!-- FOOTER -->
-    <footer class="border-t border-slate-800 bg-slate-950 py-12 text-slate-400 text-xs">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div>© 2026 VentNext LTD. 128 City Road, London, EC1V 2NX, United Kingdom.</div>
-            <div class="flex gap-4">
-                <a href="index.html" class="hover:text-white">Home</a>
-                <a href="services.html" class="hover:text-white">Services</a>
-                <a href="states.html" class="hover:text-white">50 States</a>
-                <a href="pricing.html" class="hover:text-white">Pricing</a>
-                <a href="about.html" class="hover:text-white">About</a>
-                <a href="contact.html" class="hover:text-white">Contact</a>
+    <!-- CORPORATE CTA BANNER -->
+    <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-slate-900 text-white rounded-3xl p-10 sm:p-14 text-center relative overflow-hidden shadow-2xl">
+            <div class="max-w-2xl mx-auto relative z-10">
+                <span class="text-xs uppercase font-bold tracking-widest text-emerald-400 mb-2 block">FAST TRACK ONBOARDING</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold font-display mb-4">Start Your Company in Under 5 Minutes</h2>
+                <p class="text-slate-300 text-sm mb-8 leading-relaxed">
+                    Ready to file right now? Use our self-service onboarding wizard to configure your company in minutes.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <button onclick="openWizardModal()" class="px-8 py-3.5 rounded-full bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs uppercase tracking-wider transition shadow-lg">
+                        Get Started for Free &rarr;
+                    </button>
+                    <a href="pricing.html" class="px-8 py-3.5 rounded-full border border-slate-700 hover:border-slate-500 text-white font-bold text-xs uppercase tracking-wider transition">
+                        View Transparent Pricing
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORPORATE FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 text-xs py-16 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-10 mb-12">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 rounded-lg bg-white text-slate-950 font-display font-black text-lg flex items-center justify-center">V</div>
+                        <span class="font-display font-bold text-xl text-white">Vent<span class="text-brand-500">Next</span></span>
+                    </div>
+                    <p class="text-slate-400 text-xs max-w-sm mb-6 leading-relaxed">
+                        VentNext is the institutional corporate compliance infrastructure platform for cross-border founders, agencies, and builders worldwide.
+                    </p>
+                    <div class="text-[11px] text-slate-500">
+                        Global Headquarters: 128 City Road, London, EC1V 2NX, United Kingdom
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-3 uppercase tracking-wider text-[11px]">Product Suite</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="hover:text-white transition">LLC Formation (50 States)</a></li>
+                        <li><a href="services.html#ein" class="hover:text-white transition">2-Day Expedited EIN</a></li>
+                        <li><a href="services.html#itin" class="hover:text-white transition">W-7 ITIN Certification</a></li>
+                        <li><a href="services.html#fincen" class="hover:text-white transition">FinCEN BOI Filing ($35)</a></li>
+                        <li><a href="services.html#registered-agent" class="hover:text-white transition">Statutory Registered Agent</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-3 uppercase tracking-wider text-[11px]">Solutions</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-white transition">Overview</a></li>
+                        <li><a href="states.html" class="hover:text-white transition">50 US States</a></li>
+                        <li><a href="pricing.html" class="hover:text-white transition">Pricing Packages</a></li>
+                        <li><a href="index.html#wall-of-love" class="hover:text-white transition">Wall of Love</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Help & Support</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-3 uppercase tracking-wider text-[11px]">Connect</h4>
+                    <ul class="space-y-2">
+                        <li><a href="mailto:support@ventnext.com" class="hover:text-white transition">support@ventnext.com</a></li>
+                        <li><a href="https://wa.me/" target="_blank" class="hover:text-emerald-400 text-emerald-500 font-semibold transition">WhatsApp Concierge Desk</a></li>
+                        <li><span class="text-slate-500">London, United Kingdom</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-900 pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-4">
+                <div>© 2026 VentNext LTD. All rights reserved. VentNext is not an attorney or law firm.</div>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-slate-300">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-300">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- INTERACTIVE ONBOARDING WIZARD MODAL -->
+    <div id="wizardModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 border border-slate-200 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closeWizardModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-800 p-2">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            
+            <div class="mb-6">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-1 block">VentNext Onboarding</span>
+                <h3 class="text-2xl font-bold font-display text-slate-900">Start Your US Business</h3>
+                <p class="text-xs text-slate-500 mt-1">Form your entity, get your EIN, and open your bank account.</p>
+            </div>
+
+            <form onsubmit="handleWizardSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Company Name</label>
+                    <input type="text" id="modalCompanyName" required placeholder="e.g. VentNext Global Technologies LLC" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:bg-white focus:border-brand-600">
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">State of Formation</label>
+                        <select id="modalStateSelect" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:bg-white focus:border-brand-600">
+                            <option value="Wyoming">Wyoming ($102 fee)</option>
+                            <option value="New Mexico">New Mexico ($50 fee)</option>
+                            <option value="Delaware">Delaware ($90 fee)</option>
+                            <option value="Florida">Florida ($125 fee)</option>
+                            <option value="Texas">Texas ($300 fee)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Citizen / Country</label>
+                        <input type="text" id="modalCountry" required placeholder="e.g. Bangladesh / UK" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:bg-white focus:border-brand-600">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Full Legal Name</label>
+                        <input type="text" id="modalName" required placeholder="MD Ridwan Islam" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:bg-white focus:border-brand-600">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">WhatsApp / Phone</label>
+                        <input type="tel" id="modalPhone" required placeholder="+880 1700 000000" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:bg-white focus:border-brand-600">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Email Address</label>
+                    <input type="email" id="modalEmail" required placeholder="founder@company.com" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:bg-white focus:border-brand-600">
+                </div>
+
+                <button type="submit" class="w-full py-3.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider transition shadow-md">
+                    Proceed to Filing Desk &rarr;
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- SCRIPT LOGIC -->
     <script>
         lucide.createIcons();
-        function handleContactSubmit(e) {
+
+        function toggleMobileMenu() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        }
+
+        function handleContactPageSubmit(e) {
             e.preventDefault();
-            const name = document.getElementById('contactName').value;
-            const email = document.getElementById('contactEmail').value;
-            const phone = document.getElementById('contactPhone').value;
-            alert(`✅ Thank you, ${name}! Your corporate inquiry has been transmitted to VentNext Legal Desk. We will contact you at ${phone} / ${email} shortly.`);
+            const name = document.getElementById('intakeName').value;
+            const phone = document.getElementById('intakePhone').value;
+            const state = document.getElementById('intakeState').value;
+            alert(`✅ Thank you, ${name}!\nYour advisory request for ${state} has been dispatched to our legal formation desk.\nA senior officer will contact you at ${phone} within 15 minutes.`);
+            e.target.reset();
+        }
+
+        // Modal Logic
+        function openWizardModal() {
+            document.getElementById('wizardModal').classList.remove('hidden');
+        }
+        function closeWizardModal() {
+            document.getElementById('wizardModal').classList.add('hidden');
+        }
+        function handleWizardSubmit(e) {
+            e.preventDefault();
+            const comp = document.getElementById('modalCompanyName').value;
+            const name = document.getElementById('modalName').value;
+            const phone = document.getElementById('modalPhone').value;
+            alert(`✅ Application received for ${comp}!\nFounder: ${name}\nContact: ${phone}\n\nOur legal formation desk will connect with you immediately via WhatsApp/Email.`);
+            closeWizardModal();
         }
     </script>
 </body>
