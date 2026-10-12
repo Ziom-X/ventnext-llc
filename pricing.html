@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing & Calculator | Transparent Formation Fees - VentNext</title>
+    <meta name="description" content="Transparent, institution-grade pricing for US LLC formation across all 50 states with zero hidden fees. Calculate your custom package online.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        display: ['"Space Grotesk"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .corp-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 1px 2px -1px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-slate-50/60 text-slate-800 font-sans antialiased selection:bg-brand-600 selection:text-white min-h-screen">
+
+    <!-- Top Announcement -->
+    <div class="bg-brand-900 text-white text-xs font-medium py-2.5 px-4 text-center border-b border-brand-800">
+        <span>Transparent pricing guarantee • Zero recurring subscription traps or auto-debit locks.</span>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-brand-900 flex items-center justify-center text-white font-display font-black text-xl shadow-md">
+                    V
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-display font-bold text-2xl tracking-tight text-slate-900">
+                        Vent<span class="text-brand-600">Next</span>
+                    </span>
+                    <span class="text-[10px] uppercase tracking-widest text-slate-500 font-bold -mt-1">Corporate & Tax</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+                <a href="index.html" class="hover:text-slate-900 transition-colors">Home</a>
+                <a href="services.html" class="hover:text-slate-900 transition-colors">Services</a>
+                <a href="states.html" class="hover:text-slate-900 transition-colors flex items-center gap-1.5">
+                    <span>50 States</span>
+                    <span class="px-1.5 py-0.5 rounded-full bg-brand-50 text-brand-700 text-[10px] font-bold border border-brand-200">50</span>
+                </a>
+                <a href="pricing.html" class="text-brand-600 font-bold border-b-2 border-brand-600 pb-1">Pricing & Calculator</a>
+                <a href="about.html" class="hover:text-slate-900 transition-colors">About Us</a>
+                <a href="contact.html" class="hover:text-slate-900 transition-colors">Contact</a>
+            </nav>
+
+            <button onclick="openOrderModal('Pricing Inquiry')" class="hidden sm:block bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold px-5 py-2.5 rounded-xl shadow-md shadow-brand-600/20 transition">
+                Start Formation
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="py-16 bg-white border-b border-slate-200 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2 block">TRANSPARENT SCHEDULE</span>
+            <h1 class="text-4xl sm:text-5xl font-extrabold font-display text-slate-900 mb-4">Pricing & Fee Calculator</h1>
+            <p class="text-slate-600 text-base max-w-2xl mx-auto">
+                No hidden costs. Pay only official government filing fees and choose optional federal tax services à la carte.
+            </p>
+        </div>
+    </div>
+
+    <!-- 3 CORPORATE PACKAGES -->
+    <div class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl font-bold font-display text-slate-900 mb-2">Corporate Package Options</h2>
+            <p class="text-xs text-slate-500">Choose between self-serve formation or comprehensive turnkey suites.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+            <!-- 1. Starter -->
+            <div class="corp-card p-8 rounded-3xl flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 block mb-2">Entry Tier</span>
+                    <h3 class="text-2xl font-bold font-display text-slate-900 mb-1">Starter Formation</h3>
+                    <p class="text-xs text-slate-500 mb-6">Best for founders who just need the legal LLC document.</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-black text-slate-900 font-display">$0</span>
+                        <span class="text-xs text-slate-500 font-medium"> service fee + state SOS fee</span>
+                    </div>
+                    <ul class="space-y-3 text-xs text-slate-700 border-t border-slate-100 pt-6">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Articles of Organization certified</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Custom Operating Agreement</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Free Business Name Search</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Lifetime Compliance Alerts</li>
+                    </ul>
+                </div>
+                <button onclick="openOrderModal('Starter Formation ($0 Service Fee)')" class="mt-8 w-full py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs uppercase tracking-wider transition">
+                    Select Starter
+                </button>
+            </div>
+
+            <!-- 2. Fast Track Compliance -->
+            <div class="corp-card p-8 rounded-3xl border-2 border-brand-600 relative flex flex-col justify-between bg-blue-50/20 shadow-md">
+                <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-600 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider shadow">
+                    Most Popular
+                </div>
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-brand-600 block mb-2">Essential Setup</span>
+                    <h3 class="text-2xl font-bold font-display text-slate-900 mb-1">Bank-Ready Suite</h3>
+                    <p class="text-xs text-slate-500 mb-6">Full legal setup + 2-day EIN for Stripe and US banking.</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-black text-slate-900 font-display">$149</span>
+                        <span class="text-xs text-slate-500 font-medium"> + state SOS fee</span>
+                    </div>
+                    <ul class="space-y-3 text-xs text-slate-700 border-t border-slate-200 pt-6">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-600"></i> USA LLC Formation ($0 Service Fee)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-600"></i> <strong>IRS 2-Day Fast EIN (CP-575)</strong></li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-600"></i> <strong>FinCEN BOI Mandatory Compliance</strong></li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-600"></i> 1-Year Registered Agent & Address</li>
+                    </ul>
+                </div>
+                <button onclick="openOrderModal('Bank-Ready Suite ($149)')" class="mt-8 w-full py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs uppercase tracking-wider transition shadow-md shadow-brand-600/20">
+                    Select Bank-Ready
+                </button>
+            </div>
+
+            <!-- 3. Total Suite -->
+            <div class="corp-card p-8 rounded-3xl flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-brand-700 block mb-2">Turnkey Enterprise</span>
+                    <h3 class="text-2xl font-bold font-display text-slate-900 mb-1">Global Founder Suite</h3>
+                    <p class="text-xs text-slate-500 mb-6">Complete hands-off concierge with ITIN and bank approval.</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-black text-slate-900 font-display">$299</span>
+                        <span class="text-xs text-slate-500 font-medium"> + state SOS fee</span>
+                    </div>
+                    <ul class="space-y-3 text-xs text-slate-700 border-t border-slate-100 pt-6">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-600"></i> All Bank-Ready Suite Inclusions</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-600"></i> <strong>ITIN Application (W-7 CAA certified)</strong></li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-600"></i> Priority Mercury & Relay Bank Support</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-600"></i> Dedicated 1-on-1 WhatsApp Legal Concierge</li>
+                    </ul>
+                </div>
+                <button onclick="openOrderModal('Global Founder Suite ($299)')" class="mt-8 w-full py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs uppercase tracking-wider transition">
+                    Select Total Suite
+                </button>
+            </div>
+        </div>
+
+        <!-- 50 STATES INTERACTIVE CALCULATOR -->
+        <div class="corp-card rounded-3xl p-8 sm:p-12 max-w-4xl mx-auto shadow-sm">
+            <div class="text-center mb-8">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2 block">CUSTOM QUOTE BUILDER</span>
+                <h3 class="text-3xl font-bold font-display text-slate-900 mb-2">50-State Interactive Fee Calculator</h3>
+                <p class="text-xs text-slate-500">Select any US state and your exact required services for an instant quote.</p>
+            </div>
+
+            <div class="mb-8">
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Select State (All 50 States)</label>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                    <div class="sm:col-span-2">
+                        <select id="calcStateSelectDropdown" onchange="onCalcDropdownChange()" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-slate-900 text-xs font-semibold focus:outline-none focus:border-brand-600">
+                        </select>
+                    </div>
+                    <div class="flex items-center justify-center bg-slate-50 rounded-xl border border-slate-200 px-4 py-2">
+                        <span class="text-xs text-slate-500 mr-2">State Fee:</span>
+                        <span class="text-base font-bold text-emerald-700" id="calcStateFeeDisplay">$102</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-3 mb-8">
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Federal Tax & Statutory Add-ons</label>
+                
+                <label class="flex items-center justify-between p-3.5 rounded-xl border border-slate-200 bg-slate-50/50">
+                    <div class="flex items-center gap-3">
+                        <input type="checkbox" checked disabled class="w-4 h-4 rounded text-brand-600">
+                        <span class="text-xs text-slate-700 font-semibold">USA LLC Formation ($0 VentNext Service Fee Tier)</span>
+                    </div>
+                    <span class="text-xs font-bold text-emerald-700">$0 SERVICE</span>
+                </label>
+
+                <label class="flex items-center justify-between p-3.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 cursor-pointer">
+                    <div class="flex items-center gap-3">
+                        <input type="checkbox" id="service_ein" onchange="updateCalcTotal()" checked class="w-4 h-4 rounded text-brand-600">
+                        <span class="text-xs text-slate-700 font-semibold">IRS 2-Day Fast EIN Service (Official CP-575)</span>
+                    </div>
+                    <span class="text-xs font-bold text-brand-600">+$65</span>
+                </label>
+
+                <label class="flex items-center justify-between p-3.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 cursor-pointer">
+                    <div class="flex items-center gap-3">
+                        <input type="checkbox" id="service_boi" onchange="updateCalcTotal()" checked class="w-4 h-4 rounded text-brand-600">
+                        <span class="text-xs text-slate-700 font-semibold">FinCEN BOI Mandatory Compliance Filing</span>
+                    </div>
+                    <span class="text-xs font-bold text-amber-700">+$35</span>
+                </label>
+
+                <label class="flex items-center justify-between p-3.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 cursor-pointer">
+                    <div class="flex items-center gap-3">
+                        <input type="checkbox" id="service_agent" onchange="updateCalcTotal()" checked class="w-4 h-4 rounded text-brand-600">
+                        <span class="text-xs text-slate-700 font-semibold">1-Year Statutory Registered Agent & Daily OCR Scans</span>
+                    </div>
+                    <span class="text-xs font-bold text-slate-700">+$49</span>
+                </label>
+
+                <label class="flex items-center justify-between p-3.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 cursor-pointer">
+                    <div class="flex items-center gap-3">
+                        <input type="checkbox" id="service_itin" onchange="updateCalcTotal()" class="w-4 h-4 rounded text-brand-600">
+                        <span class="text-xs text-slate-700 font-semibold">ITIN Application (W-7 CAA Digital KYC)</span>
+                    </div>
+                    <span class="text-xs font-bold text-indigo-700">+$149</span>
+                </label>
+            </div>
+
+            <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div>
+                    <span class="text-xs text-slate-500 block">Total Investment (<span id="calcStateLabel">Wyoming</span> LLC)</span>
+                    <span class="text-3xl font-black text-slate-900 font-display" id="calcTotal">$251</span>
+                </div>
+                <button onclick="orderCalculatedPackage()" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs uppercase tracking-wider transition shadow-md shadow-brand-600/20">
+                    Order Calculated Package
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800 bg-slate-950 py-12 text-slate-400 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>© 2026 VentNext LTD. 128 City Road, London, EC1V 2NX, United Kingdom.</div>
+            <div class="flex gap-4">
+                <a href="index.html" class="hover:text-white">Home</a>
+                <a href="services.html" class="hover:text-white">Services</a>
+                <a href="states.html" class="hover:text-white">50 States</a>
+                <a href="pricing.html" class="hover:text-white">Pricing</a>
+                <a href="about.html" class="hover:text-white">About</a>
+                <a href="contact.html" class="hover:text-white">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ORDER MODAL -->
+    <div id="orderModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 border border-slate-200 shadow-2xl relative">
+            <button onclick="closeOrderModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-800 p-2">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            <h3 class="text-2xl font-bold font-display text-slate-900 mb-2" id="modalServiceTitle">Order Package</h3>
+            <p class="text-xs text-slate-500 mb-6">Our formation team will prepare your filing immediately.</p>
+            <form onsubmit="handleOrderSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Company Name</label>
+                    <input type="text" id="orderLlcName" required placeholder="VentNext Global LLC" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:bg-white focus:border-brand-600">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Full Legal Name</label>
+                    <input type="text" id="orderFullName" required placeholder="MD Ridwan Islam" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:bg-white focus:border-brand-600">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">WhatsApp / Phone</label>
+                    <input type="tel" id="orderPhone" required placeholder="+880 1700 000000" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:bg-white focus:border-brand-600">
+                </div>
+                <button type="submit" class="w-full py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs uppercase tracking-wider transition shadow-md shadow-brand-600/20">
+                    Confirm Order
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const usStatesData = [
+            { name: "Wyoming", fee: 102 }, { name: "New Mexico", fee: 50 }, { name: "Delaware", fee: 90 },
+            { name: "Florida", fee: 125 }, { name: "Texas", fee: 300 }, { name: "California", fee: 70 },
+            { name: "Alabama", fee: 236 }, { name: "Alaska", fee: 250 }, { name: "Arizona", fee: 50 },
+            { name: "Arkansas", fee: 45 }, { name: "Colorado", fee: 50 }, { name: "Connecticut", fee: 120 },
+            { name: "Georgia", fee: 100 }, { name: "Hawaii", fee: 51 }, { name: "Idaho", fee: 100 },
+            { name: "Illinois", fee: 150 }, { name: "Indiana", fee: 95 }, { name: "Iowa", fee: 50 },
+            { name: "Kansas", fee: 160 }, { name: "Kentucky", fee: 40 }, { name: "Louisiana", fee: 100 },
+            { name: "Maine", fee: 175 }, { name: "Maryland", fee: 100 }, { name: "Massachusetts", fee: 500 },
+            { name: "Michigan", fee: 50 }, { name: "Minnesota", fee: 155 }, { name: "Mississippi", fee: 50 },
+            { name: "Missouri", fee: 50 }, { name: "Montana", fee: 35 }, { name: "Nebraska", fee: 105 },
+            { name: "Nevada", fee: 425 }, { name: "New Hampshire", fee: 100 }, { name: "New Jersey", fee: 125 },
+            { name: "New York", fee: 200 }, { name: "North Carolina", fee: 125 }, { name: "North Dakota", fee: 135 },
+            { name: "Ohio", fee: 99 }, { name: "Oklahoma", fee: 100 }, { name: "Oregon", fee: 100 },
+            { name: "Pennsylvania", fee: 125 }, { name: "Rhode Island", fee: 150 }, { name: "South Carolina", fee: 110 },
+            { name: "South Dakota", fee: 150 }, { name: "Tennessee", fee: 300 }, { name: "Utah", fee: 54 },
+            { name: "Vermont", fee: 125 }, { name: "Virginia", fee: 100 }, { name: "Washington", fee: 200 },
+            { name: "West Virginia", fee: 100 }, { name: "Wisconsin", fee: 130 }
+        ];
+
+        let currentSelectedState = usStatesData[0];
+
+        function populateDropdown() {
+            const dropdown = document.getElementById('calcStateSelectDropdown');
+            dropdown.innerHTML = '';
+            usStatesData.forEach(s => {
+                const opt = document.createElement('option');
+                opt.value = s.name;
+                opt.innerText = `${s.name} — $${s.fee} State Secretary Fee`;
+                dropdown.appendChild(opt);
+            });
+        }
+
+        function onCalcDropdownChange() {
+            const name = document.getElementById('calcStateSelectDropdown').value;
+            const state = usStatesData.find(s => s.name === name);
+            if (state) {
+                currentSelectedState = state;
+                document.getElementById('calcStateFeeDisplay').innerText = '$' + state.fee;
+                document.getElementById('calcStateLabel').innerText = state.name;
+                updateCalcTotal();
+            }
+        }
+
+        function updateCalcTotal() {
+            let total = currentSelectedState.fee;
+            if (document.getElementById('service_ein').checked) total += 65;
+            if (document.getElementById('service_boi').checked) total += 35;
+            if (document.getElementById('service_agent').checked) total += 49;
+            if (document.getElementById('service_itin').checked) total += 149;
+            document.getElementById('calcTotal').innerText = '$' + total;
+        }
+
+        function orderCalculatedPackage() {
+            openOrderModal(`${currentSelectedState.name} Custom Package (${document.getElementById('calcTotal').innerText})`);
+        }
+
+        function openOrderModal(service) {
+            document.getElementById('modalServiceTitle').innerText = service;
+            document.getElementById('orderModal').classList.remove('hidden');
+        }
+        function closeOrderModal() { document.getElementById('orderModal').classList.add('hidden'); }
+        function handleOrderSubmit(e) {
+            e.preventDefault();
+            alert(`✅ Order confirmed! A VentNext formation officer will reach out on WhatsApp/Email immediately.`);
+            closeOrderModal();
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+            populateDropdown();
+            updateCalcTotal();
+        });
+    </script>
+</body>
+</html>

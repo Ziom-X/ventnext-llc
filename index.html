@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VentNext | Corporate Formation & Federal Tax Services for Global Founders</title>
+    <meta name="description" content="VentNext provides enterprise-grade US entity formation across all 50 states, 2-day expedited IRS EIN, ITIN documentation, and FinCEN BOI compliance for non-resident founders.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        display: ['"Space Grotesk"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                            navy: '#0f172a',
+                            accent: '#0284c7',
+                            emerald: '#059669',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .corp-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 1px 2px -1px rgba(0, 0, 0, 0.04);
+        }
+        .corp-card-hover:hover {
+            border-color: #cbd5e1;
+            box-shadow: 0 12px 24px -6px rgba(15, 23, 42, 0.08), 0 4px 8px -4px rgba(15, 23, 42, 0.04);
+            transform: translateY(-2px);
+        }
+        .hero-light-glow {
+            background: radial-gradient(circle 800px at 50% 0%, rgba(37, 99, 235, 0.06), transparent 70%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50/60 text-slate-800 font-sans antialiased selection:bg-brand-600 selection:text-white min-h-screen">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-brand-900 text-white text-xs font-medium py-2.5 px-4 text-center border-b border-brand-800 flex items-center justify-center gap-2">
+        <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-bold border border-emerald-400/30">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5 mr-1 inline"></i> VentNext Corporate
+        </span>
+        <span class="text-slate-200">Enterprise US Entity Formation in all 50 states with $0 Service Fee Tier.</span>
+        <a href="pricing.html" class="underline hover:text-white ml-1 font-bold inline-flex items-center gap-1">View Schedule <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+    </div>
+
+    <!-- Corporate Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-900 to-brand-600 p-0.5 shadow-md shadow-brand-900/10 group-hover:scale-105 transition-transform duration-300">
+                    <div class="w-full h-full bg-brand-900 rounded-[10px] flex items-center justify-center">
+                        <span class="font-display font-black text-xl text-white">V</span>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-display font-bold text-2xl tracking-tight text-slate-900 flex items-center">
+                        Vent<span class="text-brand-600">Next</span>
+                    </span>
+                    <span class="text-[10px] uppercase tracking-widest text-slate-500 font-bold -mt-1">Corporate & Tax</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+                <a href="index.html" class="text-brand-600 font-bold border-b-2 border-brand-600 pb-1">Home</a>
+                <a href="services.html" class="hover:text-slate-900 transition-colors">Services</a>
+                <a href="states.html" class="hover:text-slate-900 transition-colors flex items-center gap-1.5">
+                    <span>50 States</span>
+                    <span class="px-1.5 py-0.5 rounded-full bg-brand-50 text-brand-700 text-[10px] font-bold border border-brand-200">50</span>
+                </a>
+                <a href="pricing.html" class="hover:text-slate-900 transition-colors">Pricing & Calculator</a>
+                <a href="about.html" class="hover:text-slate-900 transition-colors">About Us</a>
+                <a href="contact.html" class="hover:text-slate-900 transition-colors">Contact</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="https://wa.me/" target="_blank" class="text-xs font-semibold text-slate-700 hover:text-emerald-700 flex items-center gap-1.5 px-3.5 py-2 rounded-lg border border-slate-200 hover:border-emerald-300 transition bg-slate-50/50">
+                    <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i> WhatsApp Concierge
+                </a>
+                <button onclick="openOrderModal('USA LLC Formation ($0 Tier)')" class="bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold px-5 py-2.5 rounded-xl shadow-md shadow-brand-600/20 transition flex items-center gap-2">
+                    Start Your LLC <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button onclick="toggleMobileMenu()" class="md:hidden text-slate-600 hover:text-slate-900 p-2">
+                <i data-lucide="menu" id="menuIcon" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden px-4 pt-2 pb-6 bg-white border-b border-slate-200">
+            <div class="flex flex-col gap-4 text-sm font-semibold text-slate-600">
+                <a href="index.html" class="py-2 border-b border-slate-100 text-brand-600 font-bold">Home</a>
+                <a href="services.html" class="py-2 border-b border-slate-100 hover:text-slate-900">Services</a>
+                <a href="states.html" class="py-2 border-b border-slate-100 hover:text-slate-900">50 US States</a>
+                <a href="pricing.html" class="py-2 border-b border-slate-100 hover:text-slate-900">Pricing & Calculator</a>
+                <a href="about.html" class="py-2 border-b border-slate-100 hover:text-slate-900">About VentNext</a>
+                <a href="contact.html" class="py-2 hover:text-slate-900">Contact & Support</a>
+                <button onclick="openOrderModal('USA LLC Formation ($0 Tier)'); toggleMobileMenu()" class="w-full bg-brand-600 text-white font-bold py-3 rounded-xl mt-2 text-center">
+                    Start Your LLC Now
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-20 pb-24 overflow-hidden hero-light-glow border-b border-slate-200/60 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <!-- Corporate Pill Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-xs font-semibold text-slate-700 mb-8">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                <span>Institutional Corporate Formation for Global Founders</span>
+            </div>
+
+            <!-- Main Heading -->
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight font-display mb-6 leading-tight max-w-5xl mx-auto text-slate-900">
+                Incorporate Your US Entity in <br>
+                <span class="text-brand-600">All 50 States with Zero Service Fee</span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto mb-10 leading-relaxed">
+                VentNext delivers institutional corporate legal formation, 2-day expedited IRS EIN processing, certified ITIN applications, FinCEN BOI reporting, and registered agent representation for international founders worldwide.
+            </p>
+
+            <!-- Corporate Action Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+                <button onclick="openOrderModal('Full Package Formation')" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-base shadow-lg shadow-brand-600/25 transition flex items-center justify-center gap-2">
+                    <i data-lucide="building-2" class="w-5 h-5"></i> Incorporate Your US LLC
+                </button>
+                <a href="services.html" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 font-bold text-base shadow-sm transition flex items-center justify-center gap-2">
+                    <i data-lucide="layers" class="w-5 h-5 text-brand-600"></i> Explore Our 5 Services
+                </a>
+            </div>
+
+            <!-- Institutional Stats Strip -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto text-left">
+                <div class="corp-card p-5 rounded-2xl flex items-center gap-3.5">
+                    <div class="w-11 h-11 rounded-xl bg-blue-50 text-brand-600 flex items-center justify-center flex-shrink-0 font-bold">
+                        <i data-lucide="globe-2" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <div class="text-sm font-bold text-slate-900">50 US States</div>
+                        <div class="text-xs text-slate-500 font-medium">Direct SOS filings</div>
+                    </div>
+                </div>
+
+                <div class="corp-card p-5 rounded-2xl flex items-center gap-3.5">
+                    <div class="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0 font-bold">
+                        <i data-lucide="zap" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <div class="text-sm font-bold text-slate-900">48-Hr Fast EIN</div>
+                        <div class="text-xs text-slate-500 font-medium">Official CP-575 Letter</div>
+                    </div>
+                </div>
+
+                <div class="corp-card p-5 rounded-2xl flex items-center gap-3.5">
+                    <div class="w-11 h-11 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center flex-shrink-0 font-bold">
+                        <i data-lucide="credit-card" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <div class="text-sm font-bold text-slate-900">Stripe & Banking</div>
+                        <div class="text-xs text-slate-500 font-medium">Mercury, Relay, Wise</div>
+                    </div>
+                </div>
+
+                <div class="corp-card p-5 rounded-2xl flex items-center gap-3.5">
+                    <div class="w-11 h-11 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center flex-shrink-0 font-bold">
+                        <i data-lucide="award" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <div class="text-sm font-bold text-slate-900">VentNext LTD</div>
+                        <div class="text-xs text-slate-500 font-medium">London Headquartered</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: SERVICES OVERVIEW -->
+    <section class="py-24 bg-slate-50/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2 block">PRACTICE CAPABILITIES</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold font-display text-slate-900">Formation & Federal Tax Infrastructure</h2>
+                </div>
+                <a href="services.html" class="text-xs font-bold text-brand-600 hover:text-brand-800 flex items-center gap-1.5 transition">
+                    View Complete Services Breakdown <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 1. USA LLC -->
+                <div class="corp-card p-8 rounded-2xl flex flex-col justify-between corp-card-hover transition">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-blue-50 text-brand-600 flex items-center justify-center font-bold">
+                                <i data-lucide="building-2" class="w-6 h-6"></i>
+                            </div>
+                            <span class="text-[11px] font-extrabold px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 uppercase">$0 Service Fee Tier</span>
+                        </div>
+                        <h3 class="text-xl font-bold font-display text-slate-900 mb-2">USA LLC Formation</h3>
+                        <p class="text-xs text-slate-600 mb-6 leading-relaxed">
+                            Wyoming, New Mexico, Delaware, Florida, and all 50 states. Official Articles of Organization, custom Operating Agreement, and free name availability search.
+                        </p>
+                    </div>
+                    <a href="services.html#llc-formation" class="text-xs font-bold text-brand-600 hover:text-brand-800 flex items-center gap-1">Detailed Breakdown <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></a>
+                </div>
+
+                <!-- 2. Fast EIN -->
+                <div class="corp-card p-8 rounded-2xl flex flex-col justify-between corp-card-hover transition">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center font-bold">
+                                <i data-lucide="file-check-2" class="w-6 h-6"></i>
+                            </div>
+                            <span class="text-[11px] font-extrabold px-3 py-1 rounded-full bg-sky-50 text-sky-700 border border-sky-200 uppercase">48-Hr Fast Track</span>
+                        </div>
+                        <h3 class="text-xl font-bold font-display text-slate-900 mb-2">IRS 2-Day EIN Service</h3>
+                        <p class="text-xs text-slate-600 mb-6 leading-relaxed">
+                            Procure your official CP-575 Federal Employer Identification Number without SSN or ITIN. Directly fast-tracked for Stripe and US commercial banking setup.
+                        </p>
+                    </div>
+                    <a href="services.html#ein-service" class="text-xs font-bold text-brand-600 hover:text-brand-800 flex items-center gap-1">Detailed Breakdown <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></a>
+                </div>
+
+                <!-- 3. FinCEN BOI -->
+                <div class="corp-card p-8 rounded-2xl flex flex-col justify-between corp-card-hover transition">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold">
+                                <i data-lucide="shield-alert" class="w-6 h-6"></i>
+                            </div>
+                            <span class="text-[11px] font-extrabold px-3 py-1 rounded-full bg-amber-50 text-amber-700 border border-amber-200 uppercase">$35 Compliance</span>
+                        </div>
+                        <h3 class="text-xl font-bold font-display text-slate-900 mb-2">FinCEN BOI Mandatory Filing</h3>
+                        <p class="text-xs text-slate-600 mb-6 leading-relaxed">
+                            Beneficial Ownership Information compliance filing under the Corporate Transparency Act to protect your company from $500/day federal fines.
+                        </p>
+                    </div>
+                    <a href="services.html#boi-filing" class="text-xs font-bold text-brand-600 hover:text-brand-800 flex items-center gap-1">Detailed Breakdown <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: 50 STATES TEASER -->
+    <section class="py-20 bg-white border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="corp-card rounded-3xl p-8 sm:p-12 bg-gradient-to-r from-slate-900 to-slate-800 text-white flex flex-col md:flex-row items-center justify-between gap-8 shadow-xl">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-sky-400 mb-2 block">NATIONWIDE COVERAGE</span>
+                    <h3 class="text-3xl font-extrabold font-display mb-4">Complete 50 US States Directory</h3>
+                    <p class="text-sm text-slate-300 max-w-xl leading-relaxed">
+                        Search and compare official Secretary of State filing fees, annual report compliance, and corporate taxes across all 50 jurisdictions with guaranteed $0 VentNext service markup.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 flex-shrink-0">
+                    <a href="states.html" class="px-6 py-3.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs uppercase tracking-wider transition shadow-lg flex items-center justify-center gap-2">
+                        <i data-lucide="map" class="w-4 h-4"></i> Browse All 50 States
+                    </a>
+                    <a href="pricing.html" class="px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs uppercase tracking-wider transition flex items-center justify-center gap-2">
+                        <i data-lucide="calculator" class="w-4 h-4"></i> Fee Calculator
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: CORPORATE ECOSYSTEM (VENTNEXT GROUP) -->
+    <section class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2 block">VENTNEXT GROUP PORTFOLIO</span>
+            <h2 class="text-3xl font-extrabold font-display text-slate-900 mb-4">An Integrated Global Ecosystem</h2>
+            <p class="text-slate-600 text-sm max-w-2xl mx-auto mb-12">
+                VentNext operates a global suite of companies providing business formation, enterprise cloud hosting, and digital solutions for founders worldwide.
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-left">
+                <div class="corp-card p-6 rounded-2xl">
+                    <div class="w-8 h-8 rounded-lg bg-blue-50 text-brand-600 flex items-center justify-center mb-4 font-bold text-xs">VN</div>
+                    <h4 class="text-base font-bold text-slate-900 mb-1">HynoGo / Formation</h4>
+                    <p class="text-xs text-slate-500">USA LLC, UK LTD & International entity formation desk.</p>
+                </div>
+
+                <div class="corp-card p-6 rounded-2xl">
+                    <div class="w-8 h-8 rounded-lg bg-sky-50 text-sky-600 flex items-center justify-center mb-4 font-bold text-xs">HN</div>
+                    <h4 class="text-base font-bold text-slate-900 mb-1">Hostnos Cloud</h4>
+                    <p class="text-xs text-slate-500">High-performance enterprise hosting, VPS, and cloud servers.</p>
+                </div>
+
+                <div class="corp-card p-6 rounded-2xl">
+                    <div class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4 font-bold text-xs">PK</div>
+                    <h4 class="text-base font-bold text-slate-900 mb-1">PlanKori Agency</h4>
+                    <p class="text-xs text-slate-500">Digital agency, web engineering, SEO, and e-commerce.</p>
+                </div>
+
+                <div class="corp-card p-6 rounded-2xl">
+                    <div class="w-8 h-8 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center mb-4 font-bold text-xs">BF</div>
+                    <h4 class="text-base font-bold text-slate-900 mb-1">BlurrFit Global</h4>
+                    <p class="text-xs text-slate-500">Activewear, corporate apparel, and wholesale lifestyle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORPORATE FOOTER -->
+    <footer class="border-t border-slate-800 bg-slate-950 py-14 text-slate-400 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-2 mb-3">
+                        <div class="w-7 h-7 rounded-lg bg-brand-600 flex items-center justify-center font-display font-bold text-white text-sm">V</div>
+                        <span class="font-display font-bold text-lg text-white">Vent<span class="text-brand-500">Next</span></span>
+                    </div>
+                    <p class="text-slate-400 text-xs mb-4 max-w-sm">
+                        VentNext LTD is an international corporate advisory and document filing provider operating in London, United Kingdom. Specializing in US entity formation across all 50 states and international tax infrastructure.
+                    </p>
+                    <div class="text-[11px] text-slate-500">
+                        Registered in England & Wales • 128 City Road, London, EC1V 2NX
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-3 uppercase tracking-wider text-[11px]">Pages</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">Services Breakdown</a></li>
+                        <li><a href="states.html" class="hover:text-white transition">50 US States</a></li>
+                        <li><a href="pricing.html" class="hover:text-white transition">Pricing & Calculator</a></li>
+                        <li><a href="about.html" class="hover:text-white transition">About VentNext</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Contact & Support</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-3 uppercase tracking-wider text-[11px]">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#llc-formation" class="hover:text-white transition">USA LLC ($0 Tier)</a></li>
+                        <li><a href="services.html#ein-service" class="hover:text-white transition">IRS 2-Day EIN Service</a></li>
+                        <li><a href="services.html#itin-application" class="hover:text-white transition">ITIN Application (W-7)</a></li>
+                        <li><a href="services.html#boi-filing" class="hover:text-white transition">FinCEN BOI Filing ($35)</a></li>
+                        <li><a href="services.html#registered-agent" class="hover:text-white transition">Registered Agent (50 States)</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-3 uppercase tracking-wider text-[11px]">Connect</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2"><i data-lucide="mail" class="w-3.5 h-3.5 text-slate-400"></i> support@ventnext.com</li>
+                        <li class="flex items-center gap-2"><i data-lucide="message-square" class="w-3.5 h-3.5 text-emerald-400"></i> WhatsApp Concierge Desk</li>
+                        <li class="flex items-center gap-2"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-400"></i> London, United Kingdom</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-900 pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-4">
+                <div>
+                    © 2026 VentNext LTD. All rights reserved. VentNext is a document preparation and filing service across all 50 US states, and not an attorney or law firm.
+                </div>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-slate-300">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-300">Terms of Service</a>
+                    <a href="#" class="hover:text-slate-300">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE ORDER / ONBOARDING MODAL -->
+    <div id="orderModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 border border-slate-200 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closeOrderModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-800 p-2">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            
+            <div class="mb-6">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-1 block">VentNext Onboarding</span>
+                <h3 class="text-2xl font-bold font-display text-slate-900" id="modalServiceTitle">Start Formation</h3>
+                <p class="text-xs text-slate-500 mt-1">Initiate your legal filing across any US state with the VentNext legal desk.</p>
+            </div>
+
+            <form onsubmit="handleOrderSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Desired LLC Name</label>
+                    <input type="text" id="orderLlcName" required placeholder="e.g. VentNext Global Technologies LLC" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:outline-none focus:border-brand-600 focus:bg-white">
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">State of Registration</label>
+                        <select id="orderStateSelect" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:outline-none focus:border-brand-600 focus:bg-white">
+                            <option value="Wyoming">Wyoming ($102 state fee)</option>
+                            <option value="New Mexico">New Mexico ($50 state fee)</option>
+                            <option value="Delaware">Delaware ($90 state fee)</option>
+                            <option value="Florida">Florida ($125 state fee)</option>
+                            <option value="Texas">Texas ($300 state fee)</option>
+                            <option value="California">California ($70 state fee)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Country of Citizenship</label>
+                        <input type="text" id="orderCountry" required placeholder="e.g. Bangladesh / UK / UAE" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:outline-none focus:border-brand-600 focus:bg-white">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Full Legal Name (Passport)</label>
+                        <input type="text" id="orderFullName" required placeholder="MD Ridwan Islam" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:outline-none focus:border-brand-600 focus:bg-white">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">WhatsApp / Phone Number</label>
+                        <input type="tel" id="orderPhone" required placeholder="+880 1700 000000" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:outline-none focus:border-brand-600 focus:bg-white">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Email Address</label>
+                    <input type="email" id="orderEmail" required placeholder="founder@example.com" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs focus:outline-none focus:border-brand-600 focus:bg-white">
+                </div>
+
+                <button type="submit" class="w-full py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs uppercase tracking-wider transition shadow-md shadow-brand-600/20">
+                    Confirm & Proceed to Filing Desk
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+        function toggleMobileMenu() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        }
+        function openOrderModal(serviceName) {
+            document.getElementById('modalServiceTitle').innerText = serviceName;
+            document.getElementById('orderModal').classList.remove('hidden');
+        }
+        function closeOrderModal() {
+            document.getElementById('orderModal').classList.add('hidden');
+        }
+        function handleOrderSubmit(e) {
+            e.preventDefault();
+            const service = document.getElementById('modalServiceTitle').innerText;
+            const llcName = document.getElementById('orderLlcName').value;
+            const state = document.getElementById('orderStateSelect').value;
+            const name = document.getElementById('orderFullName').value;
+            alert(`✅ Order Received for VentNext Legal Desk!\n\nService: ${service}\nLLC Name: ${llcName}\nState: ${state}\nFounder: ${name}\n\nOur formation specialist will contact you immediately via WhatsApp/Email.`);
+            closeOrderModal();
+        }
+    </script>
+</body>
+</html>
